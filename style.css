@@ -4,4 +4,47 @@
   margin: 0;
   padding: 0;
 }
+
+/* BEGINNING OF HEADER */
+header {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header .header-social-links {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+}
+
+header .header-social-links .header-telephone {
+  margin-left: 3em;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: white;
+}
+
+header .header-social-links .container-social-links {
+  margin-right: 3em;
+}
+
+header .header-social-links .container-social-links a > img {
+  display: inline-block;
+  margin-left: 16px;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+/* ENDING OF HEADER */
 /*# sourceMappingURL=style.css.map */
