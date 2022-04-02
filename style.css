@@ -49,10 +49,6 @@ header .header-social-links .container-social-links a > img {
   cursor: pointer;
 }
 
-header .header-navigation {
-  background: #0c1117;
-}
-
 @media screen and (max-width: 425px) and (min-width: 320px) {
   header {
     max-width: 425px;
