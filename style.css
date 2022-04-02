@@ -110,5 +110,140 @@ header .header-navigation .nav-menu p:hover {
   color: #377dff;
 }
 
+header .header-banner-elements {
+  position: relative;
+}
+
+header .header-banner-elements .header-planet-img {
+  display: block;
+  width: 1200px;
+}
+
+header .header-banner-elements .header-grey-banner-img {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 1200px;
+}
+
+header .header-banner-elements .header-triangle-img {
+  display: block;
+  width: 1200px;
+  position: absolute;
+  z-index: 4;
+  right: 0;
+  bottom: 90px;
+}
+
+header .header-banner-elements .header-businessman-img {
+  display: block;
+  width: 600px;
+  position: absolute;
+  z-index: 3;
+  right: 5px;
+  bottom: 118px;
+}
+
+header .header-banner-elements .header-description {
+  position: absolute;
+  z-index: 4;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: white;
+  left: 3em;
+  top: 460px;
+}
+
+header .header-banner-elements .header-buttons {
+  position: absolute;
+  z-index: 4;
+  top: 580px;
+  left: 3em;
+}
+
+header .header-banner-elements .button-start-now {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  margin-right: 5px;
+  padding: 1em 0.8em;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  border-radius: 30px;
+  color: white;
+  background-color: #377dff;
+}
+
+header .header-banner-elements .button-learn-more {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  margin-left: 5px;
+  padding: 1em 0.8em;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: white;
+  border-radius: 30px;
+  border: 2px solid #377dff;
+}
+
+header .header-banner-elements .header-big-title {
+  position: absolute;
+  top: 200px;
+  left: 3em;
+  z-index: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-banner-elements .header-big-title .num-title {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: Poppins;
+  font-size: 160px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.13);
+}
+
+header .header-banner-elements .header-big-title .vertical-line {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+header .header-banner-elements .header-big-title .top-bottom-text {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+header .header-banner-elements .header-big-title .top-bottom-text .top-text {
+  text-align: left;
+  font-family: Poppins;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 80px;
+  color: white;
+}
+
+header .header-banner-elements .header-big-title .top-bottom-text .bottom-text {
+  text-align: left;
+  font-family: Poppins;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 80px;
+  color: #377dff;
+}
+
 /* Ending of header */
 /*# sourceMappingURL=style.css.map */
