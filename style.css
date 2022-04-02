@@ -1,7 +1,114 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
+
+/* BEGINNING OF HEADER */
+header {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+header .header-social-links {
+  margin-left: auto;
+  margin-right: auto;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+}
+
+header .header-social-links .header-telephone {
+  margin-left: 3em;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: white;
+}
+
+header .header-social-links .container-social-links {
+  margin-right: 3em;
+}
+
+header .header-social-links .container-social-links a {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+header .header-social-links .container-social-links a > img {
+  display: inline-block;
+  cursor: pointer;
+}
+
+header .header-navigation {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1.3em;
+  padding-bottom: 1.3em;
+  background-color: #0c1117;
+}
+
+header .header-navigation picture {
+  margin-left: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-navigation .main-logo {
+  display: inline-block;
+  margin-left: 5px;
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 34px;
+  color: #377dff;
+}
+
+header .header-navigation .nav-menu {
+  margin-right: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: white;
+}
+
+header .header-navigation .nav-menu p {
+  margin-left: 1em;
+  margin-right: 1em;
+  cursor: pointer;
+}
+
+header .header-navigation .nav-menu p:hover {
+  color: #377dff;
+}
+
+/* Ending of header */
 /*# sourceMappingURL=style.css.map */
