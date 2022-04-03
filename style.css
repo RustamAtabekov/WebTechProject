@@ -246,4 +246,66 @@ header .header-banner-elements .header-big-title .top-bottom-text .bottom-text {
 }
 
 /* Ending of header */
+.how-we-works {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.how-we-works .how-we-works-title {
+  text-align: center;
+}
+
+.how-we-works .how-we-works-title img {
+  width: 3px;
+  height: 40px;
+}
+
+.how-we-works .how-we-works-title h2 {
+  margin-top: -2px;
+  padding-top: -2px;
+  font-family: Poppins;
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.how-we-works .how-we-works-title span {
+  display: inline-block;
+  margin-left: 40px;
+  margin-right: 10px;
+  font-family: Poppins;
+  font-size: 38px;
+  font-weight: 600;
+  color: #377dff;
+}
+
+.how-we-works .container-for-circle-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 150px;
+}
+
+.how-we-works .container-for-circle-images .how-we-works-arrow1,
+.how-we-works .container-for-circle-images .how-we-works-arrow2 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.how-we-works .container-for-circle-images figcaption {
+  margin-top: 16px;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #141d28;
+}
 /*# sourceMappingURL=style.css.map */
