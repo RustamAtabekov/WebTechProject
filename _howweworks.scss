@@ -1,0 +1,124 @@
+.how-we-works {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  .how-we-works-title {
+    text-align: center;
+    img {
+      width: 3px;
+      height: 40px;
+    }
+    h2 {
+      margin-top: -2px;
+      padding-top: -2px;
+      font-family: Poppins, Arial, Helvetica, sans-serif;
+      font-size: 38px;
+      font-weight: 600;
+    }
+    span {
+      display: inline-block;
+      margin-left: 40px;
+      margin-right: 10px;
+      font-family: Poppins, Arial, Helvetica, sans-serif;
+      font-size: 38px;
+      font-weight: 600;
+      color: #377dff;
+    }
+  }
+  .container-for-circle-images {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 150px;
+    .how-we-works-arrow1,
+    .how-we-works-arrow2 {
+      align-self: center;
+    }
+    img {
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+      }
+    }
+
+    figcaption {
+      margin-top: 16px;
+      text-align: center;
+      font-family: Poppins, Arial, Helvetica, sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 30px;
+      color: #141d28;
+    }
+  }
+  .container-for-columns {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 120px;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    padding-left: 3em;
+    padding-right: 3em;
+    background-color: #233142;
+  }
+  .left-col-seo {
+    display: flex;
+    img {
+      padding: 1em;
+    }
+  }
+  .left-col-star {
+    display: flex;
+    margin-top: 80px;
+    img {
+      padding: 1em;
+    }
+  }
+  .middle-col-fully {
+    display: flex;
+    img {
+      padding: 1em;
+    }
+  }
+  .middle-col-high {
+    display: flex;
+    margin-top: 80px;
+    img {
+      padding: 1em;
+    }
+  }
+  .right-col-awesome {
+    display: flex;
+    img {
+      padding: 1em;
+    }
+  }
+  .right-col-up-to-date {
+    display: flex;
+    margin-top: 80px;
+    img {
+      padding: 1em;
+    }
+  }
+  p {
+    width: 290px;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    .top-span {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 23px;
+      &:hover {
+        cursor: pointer;
+        color: #377dff;
+      }
+    }
+    .bottom-span {
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+}
