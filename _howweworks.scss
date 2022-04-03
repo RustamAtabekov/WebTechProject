@@ -34,6 +34,13 @@
     .how-we-works-arrow2 {
       align-self: center;
     }
+    img {
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+      }
+    }
+
     figcaption {
       margin-top: 16px;
       text-align: center;
@@ -48,8 +55,50 @@
     display: flex;
     justify-content: space-evenly;
     margin-top: 120px;
-    padding-top: 2em;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    padding-left: 3em;
+    padding-right: 3em;
     background-color: #233142;
+  }
+  .left-col-seo {
+    display: flex;
+    img {
+      padding: 1em;
+    }
+  }
+  .left-col-star {
+    display: flex;
+    margin-top: 80px;
+    img {
+      padding: 1em;
+    }
+  }
+  .middle-col-fully {
+    display: flex;
+    img {
+      padding: 1em;
+    }
+  }
+  .middle-col-high {
+    display: flex;
+    margin-top: 80px;
+    img {
+      padding: 1em;
+    }
+  }
+  .right-col-awesome {
+    display: flex;
+    img {
+      padding: 1em;
+    }
+  }
+  .right-col-up-to-date {
+    display: flex;
+    margin-top: 80px;
+    img {
+      padding: 1em;
+    }
   }
   p {
     width: 290px;
@@ -61,6 +110,7 @@
       line-height: 23px;
       &:hover {
         cursor: pointer;
+        color: #377dff;
       }
     }
     .bottom-span {
