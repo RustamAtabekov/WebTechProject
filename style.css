@@ -424,15 +424,33 @@ header .header-banner-elements .header-big-title .top-bottom-text .bottom-text {
   line-height: 24px;
 }
 
-.ourbestworkers {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+.our-best {
+  margin-top: 150px;
 }
 
-.ourbestworkers article {
+.our-best .our-best-wrapper {
+  display: block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.our-best .our-best-wrapper h2 {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 46px;
+}
+
+.our-best .our-best-wrapper h2 span {
+  color: #377dff;
+}
+
+.our-best .our-best-wrapper picture {
+  margin-left: 2px;
+  margin-right: 2px;
 }
 /*# sourceMappingURL=style.css.map */

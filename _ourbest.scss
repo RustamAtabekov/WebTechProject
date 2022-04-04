@@ -1,0 +1,21 @@
+.our-best {
+  margin-top: 150px;
+  .our-best-wrapper {
+    display: block;
+    display: flex;
+    justify-content: center;
+    h2 {
+      font-family: Poppins, Arial, Helvetica, sans-serif;
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 46px;
+      span {
+        color: #377dff;
+      }
+    }
+    picture {
+      margin-left: 2px;
+      margin-right: 2px;
+    }
+  }
+}
