@@ -267,6 +267,7 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
 }
 
 /* Ending of header */
+/* Beginning of section How We Works */
 .how-we-works {
   width: 1200px;
   margin-left: auto;
@@ -439,6 +440,8 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   line-height: 24px;
 }
 
+/* Ending of section How We Works */
+/*Beginning section Our Best Workers */
 .our-best {
   margin-top: 150px;
 }
@@ -536,4 +539,106 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   font-weight: 400;
   color: #5c6f87;
 }
+
+/*Ending section Our Best Workers */
+/* Beginning section of few reasons */
+.few-reasons {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.few-reasons .few-reasons-article {
+  position: relative;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.few-reasons .few-reasons-article .few-reasons-leader-img {
+  width: 1200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.few-reasons .few-reasons-article .few-reasons-greylight-img {
+  width: 1200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+.few-reasons .few-reasons-article .container-fewr-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 50px;
+  left: 120px;
+  z-index: 2;
+}
+
+.few-reasons .few-reasons-article .container-fewr-title h2 {
+  margin-left: 30px;
+  margin-right: 30px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: #233142;
+}
+
+.few-reasons .few-reasons-article .container-fewr-title h2 span {
+  font-weight: 600;
+  color: #377dff;
+}
+
+.few-reasons .few-reasons-article .container-fewr-title img {
+  display: block;
+  height: 100px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.few-reasons .few-reasons-article .container-article-items {
+  position: absolute;
+  z-index: 2;
+  width: 400px;
+  left: 120px;
+  top: 240px;
+}
+
+.few-reasons .few-reasons-article .container-article-items h3 {
+  margin-bottom: 10px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #657991;
+}
+
+.few-reasons .few-reasons-article .container-article-items h3:hover {
+  cursor: pointer;
+  color: #377dff;
+}
+
+.few-reasons .few-reasons-article .container-article-items h4 {
+  margin-top: 10px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #233142;
+}
+
+.few-reasons .few-reasons-article .container-article-items p {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #5c6f87;
+}
+
+/* Beginning section of few reasons */
 /*# sourceMappingURL=style.css.map */
