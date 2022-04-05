@@ -2,5 +2,12 @@
   box-sizing: border-box;
 }
 
+main {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @import "_header";
 @import "_howweworks";
+@import "_ourbest";
