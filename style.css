@@ -267,6 +267,7 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
 }
 
 /* Ending of header */
+/* Beginning of section How We Works */
 .how-we-works {
   width: 1200px;
   margin-left: auto;
@@ -439,6 +440,8 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   line-height: 24px;
 }
 
+/* Ending of section How We Works */
+/*Beginning section Our Best Workers */
 .our-best {
   margin-top: 150px;
 }
@@ -536,4 +539,6 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   font-weight: 400;
   color: #5c6f87;
 }
+
+/*Ending section Our Best Workers */
 /*# sourceMappingURL=style.css.map */
