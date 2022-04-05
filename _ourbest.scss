@@ -4,18 +4,54 @@
     display: block;
     display: flex;
     justify-content: center;
+    .obw-left-person-img,
+    .obw-middle-person-img,
+    .obw-right-person-img {
+      width: 270px;
+      margin-left: 4px;
+      margin-right: 4px;
+      img {
+        width: 270px;
+      }
+    }
+    .obw-title {
+      width: 270px;
+      margin-top: auto;
+      margin-bottom: auto;
+      .obw-title-top {
+        display: flex;
+        align-items: center;
+      }
+    }
     h2 {
+      width: max-content;
+      margin-left: 10px;
       font-family: Poppins, Arial, Helvetica, sans-serif;
       font-size: 40px;
       font-weight: 600;
-      line-height: 46px;
       span {
+        display: inline-block;
+        margin-left: 5px;
+        margin-right: 5px;
         color: #377dff;
       }
     }
-    picture {
-      margin-left: 2px;
-      margin-right: 2px;
+  }
+  .obw-button {
+    width: 150px;
+    height: 50px;
+    margin-left: 10px;
+    padding: 1em;
+    text-align: center;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    border: 2px solid #377dff;
+    &:hover {
+      cursor: pointer;
+      color: #fff;
+      background-color: #377dff;
     }
   }
 }
