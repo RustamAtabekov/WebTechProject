@@ -517,4 +517,23 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   color: #fff;
   background-color: #377dff;
 }
+
+.our-best .obw-name-person {
+  margin-top: 30px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  color: #141d28;
+}
+
+.our-best .obw-profession {
+  margin-top: 5px;
+  text-align: center;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #5c6f87;
+}
 /*# sourceMappingURL=style.css.map */
