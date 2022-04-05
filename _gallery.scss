@@ -1,0 +1,44 @@
+/*Beginning of section gallery */
+.gallery {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  .container-gallery-img {
+    display: flex;
+    picture {
+      width: 300px;
+      img {
+        width: 300px;
+      }
+    }
+  }
+  .first-add {
+    position: relative;
+    width: 300px;
+    .greydark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+    .plus-sign {
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      z-index: 2;
+      left: 50%;
+      right: 50%;
+      top: 50%;
+      bottom: 50%;
+      &:hover {
+        cursor: pointer;
+        transform: scale(2);
+      }
+      img {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+}
+/*Ending of section gallery */
