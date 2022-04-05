@@ -137,6 +137,11 @@ header {
       border-radius: 30px;
       color: white;
       background-color: #377dff;
+      &:hover {
+        cursor: pointer;
+        background-color: #fff;
+        color: #377dff;
+      }
     }
     .button-learn-more {
       display: inline-block;
@@ -151,6 +156,11 @@ header {
       color: white;
       border-radius: 30px;
       border: 2px solid #377dff;
+      &:hover {
+        cursor: pointer;
+        background-color: #fff;
+        color: #377dff;
+      }
     }
     .header-big-title {
       position: absolute;
@@ -171,18 +181,21 @@ header {
         margin-left: 10px;
         margin-right: 10px;
       }
-      .top-bottom-text {
+      .top-bottom-main-title {
         margin-left: 10px;
         margin-right: 10px;
-        .top-text {
+        .top-main-title {
           text-align: left;
+          margin-top: auto;
+          margin-bottom: auto;
           font-family: Poppins, Arial, Helvetica, sans-serif;
           font-size: 50px;
           font-weight: 400;
-          line-height: 80px;
           color: white;
         }
-        .bottom-text {
+        .bottom-main-title {
+          margin-top: auto;
+          margin-bottom: auto;
           text-align: left;
           font-family: Poppins, Arial, Helvetica, sans-serif;
           font-size: 50px;
