@@ -698,4 +698,97 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
 }
 
 /*Ending of section gallery */
+/* Beginning of section Our Testimonials */
+.testimonials {
+  width: 1200px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.testimonials .testimonials-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.testimonials .testimonials-title h2 {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  line-height: 42px;
+  font-weight: 600;
+}
+
+.testimonials .testimonials-title h2 span {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #377dff;
+}
+
+.testimonials .testimonials-title img {
+  display: block;
+  width: 3px;
+  height: 42px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.testimonials .testimonials-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+}
+
+.testimonials .tes-arrow-left :hover,
+.testimonials .tes-arrow-right :hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.testimonials p {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  width: 600px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #506988;
+}
+
+.testimonials .tes-name-person {
+  margin-top: 40px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 27px;
+  font-weight: 400;
+  color: #141d28;
+}
+
+.testimonials .tes-profession {
+  margin-top: 20px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #4e5e72;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+/* Beginning of section Our Testimonials */
 /*# sourceMappingURL=style.css.map */
