@@ -23,10 +23,119 @@
       letter-spacing: 1px;
       color: #141d28;
       span {
+        display: inline-block;
+        margin-right: 10px;
+        margin-left: 10px;
         color: #377dff;
         letter-spacing: 1px;
       }
     }
   }
-  .main-news-
+  .container-for-news {
+    display: flex;
+    width: 1200px;
+    margin-top: 70px;
+    .main-news {
+      .main-news-item {
+        text-align: left;
+        margin-left: 20px;
+        .caption {
+          text-align: left;
+          margin-top: 50px;
+          margin-left: 20px;
+          font-family: Poppins, Arial, Helvetica, sans-serif;
+          font-size: 17px;
+          font-weight: 400;
+          color: #141d28;
+          letter-spacing: 1px;
+        }
+        span {
+          display: inline-block;
+          margin-right: 20px;
+          font-family: Poppins, Arial, Helvetica, sans-serif;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 30px;
+          color: #5c6f87;
+        }
+        p {
+          width: 80%;
+          text-align: left;
+          margin-left: 20px;
+          font-family: Poppins, Arial, Helvetica, sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 30px;
+          color: #5c6f87;
+        }
+        .button-view-more {
+          margin-top: 100px;
+          margin-left: 20px;
+          font-family: Poppins, Arial, Helvetica, sans-serif;
+          font-size: 12px;
+          line-height: 30px;
+          font-weight: 400;
+          letter-spacing: 4px;
+          color: #141d28;
+          &:hover {
+            cursor: pointer;
+            span {
+              color: #377dff;
+            }
+          }
+        }
+      }
+    }
+  }
+  .rest-news-items {
+    .top-article {
+      margin-bottom: 20px;
+      margin-right: 20px;
+      font-family: Poppins, Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 400;
+      letter-spacing: 1px;
+      background-color: #141d28;
+      color: #fff;
+      figcaption {
+        padding: 1em;
+        span {
+          display: inline-block;
+          margin-left: 20px;
+          margin-right: 20px;
+          font-size: 14px;
+          line-height: 14px;
+        }
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .bottom-article {
+      margin-top: 20px;
+      margin-right: 20px;
+
+      font-family: Poppins, Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 400;
+      letter-spacing: 1px;
+      background-color: #141d28;
+      color: #fff;
+      figcaption {
+        padding: 1em;
+        span {
+          display: inline-block;
+          margin-left: 20px;
+          margin-right: 20px;
+          font-size: 14px;
+          line-height: 14px;
+        }
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
 }
