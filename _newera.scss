@@ -1,0 +1,108 @@
+/* Beginning of section New Era */
+.newera {
+  width: 1200px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  .container-newera {
+    width: 1200px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    .newera-banner {
+      width: 1200;
+      img {
+        width: 1200px;
+        height: 500px;
+      }
+    }
+    .newera-man {
+      position: absolute;
+      top: 0px;
+      left: 100px;
+      width: 500px;
+      img {
+        width: auto;
+        height: 500px;
+      }
+    }
+    .newera-title-texts {
+      width: 500px;
+      height: 500px;
+      position: absolute;
+      top: 0;
+      left: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h2 {
+        margin-top: 80px;
+        font-family: Poppins, Arial, Helvetica, sans-serif;
+        font-size: 60px;
+        line-height: 65px;
+        font-weight: 600;
+        color: #fff;
+        span {
+          font-size: 50px;
+          line-height: 55px;
+          font-weight: 500;
+          color: #377dff;
+        }
+      }
+      p {
+        margin-top: 10px;
+        text-align: center;
+        font-family: Poppins, Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        line-height: 22px;
+        letter-spacing: 1px;
+        font-weight: 400;
+        color: #fff;
+      }
+      .newera-buttons {
+        display: flex;
+        margin-top: 40px;
+        .newera-start-now {
+          width: 150px;
+          height: 50px;
+          margin-left: 20px;
+          margin-right: 20px;
+          text-align: center;
+          padding: 1em;
+          background-color: #377dff;
+          font-family: Poppins, Arial, Helvetica, sans-serif;
+          font-size: 16px;
+          line-height: 16px;
+          font-weight: 400;
+          color: #fff;
+          &:hover {
+            cursor: pointer;
+            background-color: #fff;
+            color: #377dff;
+          }
+        }
+        .newera-learn-more {
+          width: 150px;
+          height: 50px;
+          margin-left: 20px;
+          margin-right: 20px;
+          text-align: center;
+          padding: 1em;
+          border: 2px solid #377dff;
+          font-family: Poppins, Arial, Helvetica, sans-serif;
+          font-size: 16px;
+          line-height: 16px;
+          font-weight: 400;
+          color: #fff;
+          &:hover {
+            cursor: pointer;
+            background-color: #fff;
+            color: #377dff;
+          }
+        }
+      }
+    }
+  }
+}
+/* Beginning of section New Era */
