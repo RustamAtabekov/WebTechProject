@@ -1097,4 +1097,14 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
 .ournews .rest-news-items .bottom-article:hover {
   cursor: pointer;
 }
+
+footer {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer .wrapper-for-footer {
+  background-color: #141d28;
+}
 /*# sourceMappingURL=style.css.map */
