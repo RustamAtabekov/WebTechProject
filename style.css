@@ -749,23 +749,53 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
 }
 
 .testimonials .testimonials-slider {
+  width: 1200px;
+  height: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin-top: 50px;
 }
 
-.testimonials .tes-arrow-left :hover,
-.testimonials .tes-arrow-right :hover {
+.testimonials .wrapper-current-item {
+  width: 800px;
+}
+
+.testimonials .current-item {
+  width: 790px;
+  margin: 0 auto;
+}
+
+.testimonials .btn-left {
+  display: block;
+  width: 200px;
+}
+
+.testimonials .btn-left :hover {
   cursor: pointer;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.testimonials .btn-right {
+  display: block;
+  width: 200px;
+}
+
+.testimonials .btn-right :hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.testimonials .hide {
+  display: none;
 }
 
 .testimonials p {
@@ -780,7 +810,7 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   color: #506988;
 }
 
-.testimonials .tes-name-person {
+.testimonials .name-person {
   margin-top: 40px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 27px;
@@ -788,7 +818,7 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   color: #141d28;
 }
 
-.testimonials .tes-profession {
+.testimonials .profession {
   margin-top: 20px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -796,6 +826,12 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   color: #4e5e72;
   text-transform: uppercase;
   letter-spacing: 4px;
+}
+
+.input-name,
+.input-profession,
+.input-comment {
+  margin-top: 20px;
 }
 
 /* Beginning of section Our Testimonials */

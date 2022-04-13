@@ -31,17 +31,45 @@
     }
   }
   .testimonials-slider {
+    width: 1200px;
+    height: 600px;
+    // border: 1px solid black;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     margin-top: 50px;
   }
-  .tes-arrow-left,
-  .tes-arrow-right {
+  .wrapper-current-item {
+    width: 800px;
+    // border: 1px solid green;
+  }
+  .current-item {
+    width: 790px;
+    margin: 0 auto;
+    // border: 1px solid blue;
+  }
+  .btn-left {
+    display: block;
+    width: 200px;
+    // border: 1px solid gray;
     :hover {
       cursor: pointer;
       transform: scale(1.1);
     }
+  }
+  .btn-right {
+    display: block;
+    width: 200px;
+    // border: 1px solid gray;
+
+    :hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
+
+  .hide {
+    display: none;
   }
   p {
     margin-left: auto;
@@ -54,14 +82,14 @@
     line-height: 24px;
     color: #506988;
   }
-  .tes-name-person {
+  .name-person {
     margin-top: 40px;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-size: 27px;
     font-weight: 400;
     color: #141d28;
   }
-  .tes-profession {
+  .profession {
     margin-top: 20px;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -70,5 +98,11 @@
     text-transform: uppercase;
     letter-spacing: 4px;
   }
+}
+
+.input-name,
+.input-profession,
+.input-comment {
+  margin-top: 20px;
 }
 /* Beginning of section Our Testimonials */
