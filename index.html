@@ -367,7 +367,9 @@
           <h2><span>Our</span>Testimonials</h2>
         </div>
 
+        <!-- SLIDER -->
         <div class="testimonials-slider">
+          <!-- BUTTON LEFT -->
           <picture class="btn-left">
             <img src="pictures/testimonials/arrow-left.png " alt="picture" />
           </picture>
@@ -390,24 +392,24 @@
               </div>
             </div>
           </div>
-
+          <!--BUTTON RIGHT -->
           <picture class="btn-right">
             <img src="pictures/testimonials/arrow-right.png" alt="picture" />
           </picture>
         </div>
-
+        <!-- FORM -->
         <div class="form">
-          <input class="input-name" type="text" /> <br />
-
-          <input class="input-profession" type="text" /> <br />
+          <input type="text" value="" id="personName" /> <br />
+          <input type="text" value="" id="personProfession" /> <br />
 
           <textarea
-            class="input-comment"
-            name=""
-            id=""
-            cols="40"
+            type="text"
+            id="personComment"
+            cols="50"
             rows="10"
           ></textarea>
+          <br />
+          <button onclick="saveComment()">Save comment</button>
         </div>
       </section>
       <!-- Ending of section Testimonials -->
