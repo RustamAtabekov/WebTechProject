@@ -1,45 +1,24 @@
 // CLICK ON BUTTONS LEFT AND RIGHTS
 const $btnLeft = document.querySelector(".btn-left");
-const $btnRight = document.querySelector(".btn-right");
+const $currentItem = document.querySelector(".current-item");
 
-let personName;
-let personProfession;
-let personComment;
+let items = $currentItem.children;
 
-export function saveComment() {
-  personName = document.querySelector("#personName").value;
-  personProfession = document.querySelector("#personProfession").value;
-  personComment = document.querySelector("#personComment").value;
-}
+let i = 0;
+
+items[i];
 
 $btnLeft.addEventListener("click", function () {
-  const $currentItem = document.querySelector(".current-item");
-  $currentItem.innerHTML = `<div class="item">
-                <picture">
-                  <img src="pictures/testimonials/" alt="picture" />
-                </picture>
-                <p>
-                  ${personComment}
-                </p>
-                <figcaption>
-                  <p class="name-person">${personName}</p>
-                  <p class="profession">${personProfession}</p>
-                </figcaption>
-              </div>`;
+  if (items[i].classList.contains("show")) {
+    items[i].classList.add("hide");
+    i++;
+    items[i].classList.remove("hide");
+    items[i].classList.add("show");
+  }
 });
 
-$btnRight.addEventListener("click", function () {
-  const $currentItem = document.querySelector(".current-item");
-  $currentItem.innerHTML = `<div class="item">
-                <picture">
-                  <img src="pictures/testimonials/" alt="picture" />
-                </picture>
-                <p>
-                  ${personComment}
-                </p>
-                <figcaption>
-                  <p class="name-person">${personName}</p>
-                  <p class="profession">${personProfession}</p>
-                </figcaption>
-              </div>`;
-});
+// function saveComment() {
+//   personName = document.querySelector("#personName").value;
+//   personProfession = document.querySelector("#personProfession").value;
+//   personComment = document.querySelector("#personComment").value;
+// }
