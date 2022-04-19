@@ -830,16 +830,17 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   margin-top: 20px;
 }
 
-.person1,
-.person2,
-.person3,
-.person4,
-.person5,
-.person6,
-.person7,
-.person8,
-.person9,
-.person10 {
+.current-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
   width: 400px;
   height: 200px;
   font-family: Poppins;
@@ -850,16 +851,6 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   margin-left: auto;
   margin-right: auto;
   border: 10px solid lightblue;
-}
-
-.current-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.hide {
-  display: none;
 }
 
 /* Beginning of section New Era */

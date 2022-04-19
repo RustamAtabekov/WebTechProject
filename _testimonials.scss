@@ -103,16 +103,15 @@
   margin-top: 20px;
 }
 
-.person1,
-.person2,
-.person3,
-.person4,
-.person5,
-.person6,
-.person7,
-.person8,
-.person9,
-.person10 {
+.current-item {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
   width: 400px;
   height: 200px;
   font-family: Poppins;
@@ -123,12 +122,4 @@
   margin-left: auto;
   margin-right: auto;
   border: 10px solid lightblue;
-}
-
-.current-item {
-  display: flex;
-}
-
-.hide {
-  display: none;
 }
