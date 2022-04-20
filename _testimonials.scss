@@ -50,8 +50,9 @@
   }
   .btn-left {
     display: block;
-    width: 200px;
-    // border: 1px solid gray;
+    margin-left: 100px;
+    border: none;
+    background-color: transparent;
     :hover {
       cursor: pointer;
       transform: scale(1.1);
@@ -59,8 +60,9 @@
   }
   .btn-right {
     display: block;
-    width: 200px;
-    // border: 1px solid gray;
+    margin-right: 100px;
+    border: none;
+    background-color: transparent;
 
     :hover {
       cursor: pointer;

@@ -774,7 +774,9 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
 
 .testimonials .btn-left {
   display: block;
-  width: 200px;
+  margin-left: 100px;
+  border: none;
+  background-color: transparent;
 }
 
 .testimonials .btn-left :hover {
@@ -785,7 +787,9 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
 
 .testimonials .btn-right {
   display: block;
-  width: 200px;
+  margin-right: 100px;
+  border: none;
+  background-color: transparent;
 }
 
 .testimonials .btn-right :hover {
