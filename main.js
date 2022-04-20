@@ -1,12 +1,15 @@
-// access to buttons of slider left and right
+// access to left and right buttons of slider
 const $btnLeft = document.querySelector(".btn-left");
 const $btnRight = document.querySelector(".btn-right");
-// access to elements of collection slides
+
+// access to all elements of collection slides and current item
 const $currentItem = document.querySelector(".current-item");
 const items = $currentItem.children;
-// assign position to first slide
+
+// assign position for the first slide
 let i = 0;
 
+// add Listener to the left-button and move slides to left side
 $btnLeft.addEventListener("click", function () {
   if (items[i].classList.contains("show")) {
     items[i].classList.remove("show");
@@ -21,7 +24,7 @@ $btnLeft.addEventListener("click", function () {
   }
 });
 
-// SLIDER ARROW RIGHT
+// add Listener to the right-button and move slides to right side
 $btnRight.addEventListener("click", function () {
   if (i == 0) {
     items[i].classList.remove("show");
