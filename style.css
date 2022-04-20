@@ -705,6 +705,11 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
 
 /*Ending of section gallery */
 /* Beginning of section Our Testimonials */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .testimonials {
   width: 1200px;
   margin-top: 100px;
@@ -768,8 +773,18 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
 }
 
 .testimonials .current-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 790px;
-  margin: 0 auto;
+  height: 590px;
 }
 
 .testimonials .btn-left {
@@ -801,7 +816,6 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
 .testimonials p {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 60px;
   width: 600px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 20px;
@@ -810,8 +824,17 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   color: #506988;
 }
 
+.testimonials .testimonial {
+  height: 120px;
+}
+
+.testimonials .person {
+  margin-top: 0px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
 .testimonials .name-person {
-  margin-top: 40px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 27px;
   font-weight: 400;
@@ -819,19 +842,12 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
 }
 
 .testimonials .profession {
-  margin-top: 20px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #4e5e72;
   text-transform: uppercase;
   letter-spacing: 4px;
-}
-
-.input-name,
-.input-profession,
-.input-comment {
-  margin-top: 20px;
 }
 
 .current-item {
@@ -849,6 +865,92 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   padding-top: 0.3em;
   margin-left: auto;
   margin-right: auto;
+}
+
+.container-like-dislike {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 60px;
+}
+
+.likes {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.likes img {
+  display: block;
+}
+
+.likes img:hover {
+  cursor: pointer;
+}
+
+.likes .like {
+  display: block;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.likes #sum-likes {
+  display: block;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #377dff;
+}
+
+.dislikes {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.dislikes img {
+  display: block;
+}
+
+.dislikes img:hover {
+  cursor: pointer;
+}
+
+.dislikes .dislike {
+  display: block;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.dislikes .counter-dislikes {
+  display: block;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #377dff;
 }
 
 /* Beginning of section New Era */

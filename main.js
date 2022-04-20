@@ -41,8 +41,11 @@ $btnRight.addEventListener("click", function () {
   }
 });
 
-// function saveComment() {
-//   personName = document.querySelector("#personName").value;
-//   personProfession = document.querySelector("#personProfession").value;
-//   personComment = document.querySelector("#personComment").value;
-// }
+// access to like element
+const $like = document.querySelector(".like");
+let imgLike = $like.children;
+
+$like.addEventListener("click", function () {
+  let i = 0;
+  imgLike[i].src = "pictures/testimonials/like-on.jpg";
+});
