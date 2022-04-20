@@ -845,16 +845,10 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
 }
 
 .show {
-  width: 400px;
-  height: 200px;
-  font-family: Poppins;
-  font-size: 100px;
-  font-weight: 900;
   text-align: center;
   padding-top: 0.3em;
   margin-left: auto;
   margin-right: auto;
-  border: 10px solid lightblue;
 }
 
 /* Beginning of section New Era */
