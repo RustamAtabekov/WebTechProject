@@ -366,36 +366,154 @@
           />
           <h2><span>Our</span>Testimonials</h2>
         </div>
+
+        <!-- SLIDER -->
         <div class="testimonials-slider">
-          <picture class="tes-arrow-left">
-            <img
-              src="pictures/testimonials/arrow-left.png
-          "
-              alt="picture"
-            />
-          </picture>
-          <picture class="tes-person1">
-            <img src="pictures/testimonials/person1.png" alt="picture" />
-          </picture>
-          <picture class="tes-person2">
-            <img src="pictures/testimonials/person2.png" alt="picture" />
-          </picture>
-          <picture class="tes-person3">
-            <img src="pictures/testimonials/person3.png" alt="picture" />
-          </picture>
-          <picture class="tes-arrow-right">
+          <!-- BUTTON LEFT -->
+          <button class="btn-left">
+            <img src="pictures/testimonials/arrow-left.png " alt="picture" />
+          </button>
+
+          <div class="wrapper-current-item">
+            <div class="current-items">
+              <!-- person 1-->
+              <div class="person show">
+                <picture>
+                  <img src="pictures/testimonials/person-1.png" alt="picture" />
+                </picture>
+                <p class="testimonial">
+                  Donec eget elit vel urna varius pharetra. Suspendisse sodales
+                  venenatis lorem nec tincidunt. Donec dignissim purus ut nulla
+                  ultricies.
+                </p>
+                <figcaption>
+                  <p class="name-person">Ronald C. Hartung</p>
+                  <p class="profession">marketer</p>
+                </figcaption>
+
+                <div class="container-like-dislike">
+                  <div class="likes">
+                    <picture class="like hide-like">
+                      <img
+                        src="pictures/testimonials/like-off.jpg"
+                        alt="picture"
+                      />
+                    </picture>
+                    <span id="sum-likes"></span>
+                  </div>
+
+                  <div class="dislikes">
+                    <picture class="dislike">
+                      <img
+                        src="pictures/testimonials/dislike-off.jpg"
+                        alt="picture"
+                      />
+                    </picture>
+                    <span id="sum-dislikes">68</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- person 2-->
+              <div class="person hide">
+                <picture>
+                  <img src="pictures/testimonials/person-2.png" alt="picture" />
+                </picture>
+                <p class="testimonial">
+                  Donec eget elit vel urna varius pharetra. Suspendisse sodales
+                  venenatis lorem nec tincidunt. Donec dignissim purus ut nulla
+                  ultricies. Lorem ipsum dolor sit amet consectetur, adipisicing
+                  elit. Repellendus, voluptate.
+                </p>
+                <figcaption>
+                  <p class="name-person">Bill Clinton</p>
+                  <p class="profession">presedent</p>
+                </figcaption>
+                <div class="container-like-dislike">
+                  <div class="likes">
+                    <picture class="like">
+                      <img
+                        src="pictures/testimonials/like-off.jpg"
+                        alt="picture"
+                      />
+                    </picture>
+                    <span id="sum-likes">4</span>
+                  </div>
+                  <div class="dislikes">
+                    <picture class="dislike">
+                      <img
+                        src="pictures/testimonials/dislike-off.jpg"
+                        alt="picture"
+                      />
+                    </picture>
+                    <span class="counter-dislikes">3</span>
+                  </div>
+                </div>
+              </div>
+
+              <!--person3-->
+              <div class="person hide">
+                <picture>
+                  <img src="pictures/testimonials/person-3.png" alt="picture" />
+                </picture>
+                <p class="testimonial">
+                  Donec eget elit vel urna varius pharetra. Suspendisse sodales
+                  venenatis lorem nec tincidunt Lorem ipsum dolor sit, amet
+                  consectetur adipisicing elit. Aperiam ea nobis suscipit veniam
+                  nihil natus? Alias, odit veniam? Donec dignissim purus ut
+                  nulla ultricies.Donec eget elit vel urna varius pharetra.
+                  Suspendisse sodales venenatis lorem nec tincidunt Lorem ipsum
+                  dolor sit, amet consectetur adipisicing elit. Aperiam ea nobis
+                  suscipit veniam nihil natus? Alias, odit veniam? Donec
+                  dignissim purus ut nulla ultricies.
+                </p>
+                <figcaption>
+                  <p class="name-person">Erich From</p>
+                  <p class="profession">writer</p>
+                </figcaption>
+                <div class="container-like-dislike">
+                  <div class="likes">
+                    <picture class="like">
+                      <img
+                        src="pictures/testimonials/like-off.jpg"
+                        alt="picture"
+                      />
+                    </picture>
+                    <span id="sum-likes">4</span>
+                  </div>
+                  <div class="dislikes">
+                    <picture class="dislike">
+                      <img
+                        src="pictures/testimonials/dislike-off.jpg"
+                        alt="picture"
+                      />
+                    </picture>
+                    <span class="counter-dislikes">3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--BUTTON RIGHT -->
+          <button class="btn-right">
             <img src="pictures/testimonials/arrow-right.png" alt="picture" />
-          </picture>
+          </button>
         </div>
-        <p>
-          Donec eget elit vel urna varius pharetra. Suspendisse sodales
-          venenatis lorem nec tincidunt. Donec dignissim purus ut nulla
-          ultricies.
-        </p>
-        <figcaption>
-          <p class="tes-name-person">Ronald C. Hartung</p>
-          <p class="tes-profession">marketer</p>
-        </figcaption>
+        <!-- FORM -->
+        <!-- <div class="form">
+          <input type="text" value="" id="personName" /> <br />
+          <input type="text" value="" id="personProfession" /> <br />
+
+          <textarea
+            type="text"
+            id="personComment"
+            cols="50"
+            rows="10"
+          ></textarea>
+          <br />
+          <button onclick="saveComment()">Save comment</button>
+        </div> -->
       </section>
       <!-- Ending of section Testimonials -->
 
