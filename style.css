@@ -854,7 +854,7 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   letter-spacing: 4px;
 }
 
-.current-item {
+.current-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -945,7 +945,7 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
       align-self: flex-end;
 }
 
-.dislikes .counter-dislikes {
+.dislikes #sum-dislikes {
   display: block;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;

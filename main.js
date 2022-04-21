@@ -1,11 +1,10 @@
-// access to left and right buttons of slider
+// get left and right buttons of slider
 const $btnLeft = document.querySelector(".btn-left");
 const $btnRight = document.querySelector(".btn-right");
 
-// access to all elements of collection slides and current item
-const $currentItem = document.querySelector(".current-item");
-const items = $currentItem.children;
-
+//get all elements of collection slides
+const $currentItems = document.querySelector(".current-items");
+const items = $currentItems.children;
 // assign position for the first slide
 let i = 0;
 
@@ -41,11 +40,72 @@ $btnRight.addEventListener("click", function () {
   }
 });
 
-// access to like element
+// get LIKE element
 const $like = document.querySelector(".like");
 let imgLike = $like.children;
 
+// get sum(counter) LIKES
+const sumLikes = document.querySelector("#sum-likes");
+sumLikes.children;
+
+// set initial amount of counter LIKES
+let counterLikes = 0;
+sumLikes.innerHTML = counterLikes;
+
+// increase or decrease LIKES by pressing buttons
 $like.addEventListener("click", function () {
   let i = 0;
-  imgLike[i].src = "pictures/testimonials/like-on.jpg";
+  if (
+    imgLike[i].src.includes("pictures/testimonials/like-off.jpg") &&
+    imgDislike[i].src.includes("pictures/testimonials/dislike-off.jpg")
+  ) {
+    imgLike[i].src = "pictures/testimonials/like-on.jpg";
+    sumLikes.innerHTML = ++counterLikes;
+  } else if (
+    imgLike[i].src.includes("pictures/testimonials/like-off.jpg") &&
+    imgDislike[i].src.includes("pictures/testimonials/dislike-on.jpg")
+  ) {
+    imgLike[i].src = "pictures/testimonials/like-on.jpg";
+    sumLikes.innerHTML = ++counterLikes;
+    imgDislike[i].src = "pictures/testimonials/dislike-off.jpg";
+    sumDislikes.innerHTML = --counterDislikes;
+  } else {
+    imgLike[i].src = "pictures/testimonials/like-off.jpg";
+    sumLikes.innerHTML = --counterLikes;
+  }
+});
+
+// get DISLIKE element
+const $dislike = document.querySelector(".dislike");
+let imgDislike = $dislike.children;
+
+// get sum(counter) DISLIKES
+const sumDislikes = document.querySelector("#sum-dislikes");
+sumDislikes.children;
+
+// set initial amount of counter DISLIKES
+let counterDislikes = 0;
+sumDislikes.innerHTML = counterDislikes;
+
+// increase or decrease DISLIKES by pressing buttons
+$dislike.addEventListener("click", function () {
+  let i = 0;
+  if (
+    imgDislike[i].src.includes("pictures/testimonials/dislike-off.jpg") &&
+    imgLike[i].src.includes("pictures/testimonials/like-off.jpg")
+  ) {
+    imgDislike[i].src = "pictures/testimonials/dislike-on.jpg";
+    sumDislikes.innerHTML = ++counterDislikes;
+  } else if (
+    imgDislike[i].src.includes("pictures/testimonials/dislike-off.jpg") &&
+    imgLike[i].src.includes("pictures/testimonials/like-on")
+  ) {
+    imgDislike[i].src = "pictures/testimonials/dislike-on.jpg";
+    sumDislikes.innerHTML = ++counterDislikes;
+    imgLike[i].src = "pictures/testimonials/like-off.jpg";
+    sumLikes.innerHTML = --counterLikes;
+  } else {
+    imgDislike[i].src = "pictures/testimonials/dislike-off.jpg";
+    sumDislikes.innerHTML = --counterDislikes;
+  }
 });

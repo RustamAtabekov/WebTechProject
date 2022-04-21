@@ -110,7 +110,7 @@
   }
 }
 
-.current-item {
+.current-items {
   display: flex;
 }
 
@@ -176,7 +176,7 @@
     display: block;
     align-self: flex-end;
   }
-  .counter-dislikes {
+  #sum-dislikes {
     display: block;
     align-self: center;
     font-family: Poppins, Arial, Helvetica, sans-serif;
