@@ -35,7 +35,7 @@
   }
   .testimonials-slider {
     width: 1200px;
-    height: 600px;
+    height: 800px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,7 +53,7 @@
   }
   .btn-left {
     display: block;
-    margin-left: 100px;
+    margin-left: 50px;
     border: none;
     background-color: transparent;
     :hover {
@@ -63,7 +63,7 @@
   }
   .btn-right {
     display: block;
-    margin-right: 100px;
+    margin-right: 50px;
     border: none;
     background-color: transparent;
 
@@ -76,15 +76,19 @@
   p {
     margin-left: auto;
     margin-right: auto;
-    width: 600px;
+    width: 800px;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 30px;
     color: #506988;
   }
   .testimonial {
-    height: 120px;
+    height: 200px;
+    padding: 0.7em;
+    overflow: auto;
+    border: 1px solid #377dff;
+    border-radius: 10px;
   }
   .person {
     margin-top: 0px;
@@ -125,7 +129,7 @@
 .container-like-dislike {
   display: flex;
   justify-content: center;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 // styles for likes
