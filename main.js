@@ -45,7 +45,7 @@ const $like = document.querySelector(".like");
 let imgLike = $like.children;
 
 // get sum(counter) LIKES
-const sumLikes = document.querySelector("#sum-likes");
+const sumLikes = document.querySelector(".sum-likes");
 sumLikes.children;
 
 // set initial amount of counter LIKES
@@ -80,7 +80,7 @@ const $dislike = document.querySelector(".dislike");
 let imgDislike = $dislike.children;
 
 // get sum(counter) DISLIKES
-const sumDislikes = document.querySelector("#sum-dislikes");
+const sumDislikes = document.querySelector(".sum-dislikes");
 sumDislikes.children;
 
 // set initial amount of counter DISLIKES

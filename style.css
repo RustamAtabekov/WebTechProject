@@ -907,7 +907,7 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
       align-self: flex-start;
 }
 
-.likes #sum-likes {
+.likes .sum-likes {
   display: block;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -945,7 +945,7 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
       align-self: flex-end;
 }
 
-.dislikes #sum-dislikes {
+.dislikes .sum-dislikes {
   display: block;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
