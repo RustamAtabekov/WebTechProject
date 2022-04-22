@@ -5,6 +5,7 @@ const $btnRight = document.querySelector(".btn-right");
 //get all elements of collection slides
 const $currentItems = document.querySelector(".current-items");
 const items = $currentItems.children;
+
 // assign position for the first slide
 let i = 0;
 
@@ -40,72 +41,92 @@ $btnRight.addEventListener("click", function () {
   }
 });
 
-// get LIKE element
-const $like = document.querySelector(".like");
-let imgLike = $like.children;
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
-// get sum(counter) LIKES
-const sumLikes = document.querySelector(".sum-likes");
-sumLikes.children;
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
-// set initial amount of counter LIKES
-let counterLikes = 0;
-sumLikes.innerHTML = counterLikes;
+//
+//
+//
+//
+// likes and dislikes src values for images
+const likeOn = "pictures/testimonials/like-on.jpg";
+const likeOff = "pictures/testimonials/like-off.jpg";
+const dislikeOn = "pictures/testimonials/dislike-on.jpg";
+const dislikeOff = "pictures/testimonials/dislike-off.jpg";
+//
+//
+//
+// LIKES
 
-// increase or decrease LIKES by pressing buttons
-$like.addEventListener("click", function () {
-  let i = 0;
-  if (
-    imgLike[i].src.includes("pictures/testimonials/like-off.jpg") &&
-    imgDislike[i].src.includes("pictures/testimonials/dislike-off.jpg")
-  ) {
-    imgLike[i].src = "pictures/testimonials/like-on.jpg";
-    sumLikes.innerHTML = ++counterLikes;
-  } else if (
-    imgLike[i].src.includes("pictures/testimonials/like-off.jpg") &&
-    imgDislike[i].src.includes("pictures/testimonials/dislike-on.jpg")
-  ) {
-    imgLike[i].src = "pictures/testimonials/like-on.jpg";
-    sumLikes.innerHTML = ++counterLikes;
-    imgDislike[i].src = "pictures/testimonials/dislike-off.jpg";
-    sumDislikes.innerHTML = --counterDislikes;
-  } else {
-    imgLike[i].src = "pictures/testimonials/like-off.jpg";
-    sumLikes.innerHTML = --counterLikes;
-  }
+let likeElements = document.querySelectorAll(".like");
+
+likeElements.forEach(function (item) {
+  item.addEventListener("click", function () {
+    if (item.src === likeOff) {
+      item.querySelector("img").src = likeOn;
+      item.src = likeOn;
+    } else {
+      item.querySelector("img").src = likeOff;
+      item.src = likeOff;
+    }
+  });
 });
 
-// get DISLIKE element
-const $dislike = document.querySelector(".dislike");
-let imgDislike = $dislike.children;
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
-// get sum(counter) DISLIKES
-const sumDislikes = document.querySelector(".sum-dislikes");
-sumDislikes.children;
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
-// set initial amount of counter DISLIKES
-let counterDislikes = 0;
-sumDislikes.innerHTML = counterDislikes;
+// DISLIKES
 
-// increase or decrease DISLIKES by pressing buttons
-$dislike.addEventListener("click", function () {
-  let i = 0;
-  if (
-    imgDislike[i].src.includes("pictures/testimonials/dislike-off.jpg") &&
-    imgLike[i].src.includes("pictures/testimonials/like-off.jpg")
-  ) {
-    imgDislike[i].src = "pictures/testimonials/dislike-on.jpg";
-    sumDislikes.innerHTML = ++counterDislikes;
-  } else if (
-    imgDislike[i].src.includes("pictures/testimonials/dislike-off.jpg") &&
-    imgLike[i].src.includes("pictures/testimonials/like-on")
-  ) {
-    imgDislike[i].src = "pictures/testimonials/dislike-on.jpg";
-    sumDislikes.innerHTML = ++counterDislikes;
-    imgLike[i].src = "pictures/testimonials/like-off.jpg";
-    sumLikes.innerHTML = --counterLikes;
-  } else {
-    imgDislike[i].src = "pictures/testimonials/dislike-off.jpg";
-    sumDislikes.innerHTML = --counterDislikes;
-  }
+let dislikeElements = document.querySelectorAll(".dislike");
+dislikeElements.forEach(function (item) {
+  item.addEventListener("click", function () {
+    item.src = item.querySelector("img").getAttribute("src");
+    if (item.src === "pictures/testimonials/dislike-off.jpg") {
+      item.querySelector("img").src = dislikeOn;
+      item.src = dislikeOn;
+    } else {
+      item.querySelector("img").src = dislikeOff;
+      item.src = dislikeOff;
+    }
+  });
 });
