@@ -705,6 +705,11 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
 
 /*Ending of section gallery */
 /* Beginning of section Our Testimonials */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .testimonials {
   width: 1200px;
   margin-top: 100px;
@@ -749,20 +754,60 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
 }
 
 .testimonials .testimonials-slider {
+  width: 1200px;
+  height: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin-top: 50px;
 }
 
-.testimonials .tes-arrow-left :hover,
-.testimonials .tes-arrow-right :hover {
+.testimonials .wrapper-current-item {
+  width: 800px;
+}
+
+.testimonials .current-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 790px;
+  height: 590px;
+}
+
+.testimonials .btn-left {
+  display: block;
+  margin-left: 50px;
+  border: none;
+  background-color: transparent;
+}
+
+.testimonials .btn-left :hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.testimonials .btn-right {
+  display: block;
+  margin-right: 50px;
+  border: none;
+  background-color: transparent;
+}
+
+.testimonials .btn-right :hover {
   cursor: pointer;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -771,25 +816,36 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
 .testimonials p {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 60px;
-  width: 600px;
+  width: 800px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 30px;
   color: #506988;
 }
 
-.testimonials .tes-name-person {
-  margin-top: 40px;
+.testimonials .testimonial {
+  height: 200px;
+  padding: 0.7em;
+  overflow: auto;
+  border: 1px solid #377dff;
+  border-radius: 10px;
+}
+
+.testimonials .person {
+  margin-top: 0px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.testimonials .name-person {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 27px;
   font-weight: 400;
   color: #141d28;
 }
 
-.testimonials .tes-profession {
-  margin-top: 20px;
+.testimonials .profession {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -798,7 +854,109 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   letter-spacing: 4px;
 }
 
-/* Beginning of section Our Testimonials */
+.current-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  text-align: center;
+  padding-top: 0.3em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-like-dislike {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+
+.likes {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.likes img {
+  display: block;
+}
+
+.likes img:hover {
+  cursor: pointer;
+}
+
+.likes .like {
+  display: block;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.likes .sum-likes {
+  display: block;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #377dff;
+}
+
+.dislikes {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.dislikes img {
+  display: block;
+}
+
+.dislikes img:hover {
+  cursor: pointer;
+}
+
+.dislikes .dislike {
+  display: block;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.dislikes .sum-dislikes {
+  display: block;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #377dff;
+}
+
 /* Beginning of section New Era */
 .newera {
   width: 1200px;
