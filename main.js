@@ -6,38 +6,32 @@ const $btnRight = document.querySelector(".btn-right");
 const $currentItems = document.querySelector(".current-items");
 const slideItems = $currentItems.children;
 
-// assign position for the first slide
+// assign position for first slide
 let i = 0;
 
-// add Listener to the left-button and move slides to left side
+// move slide to left side
 $btnLeft.addEventListener("click", function () {
   if (slideItems[i].classList.contains("show")) {
-    slideItems[i].classList.remove("show");
-    slideItems[i].classList.add("hide");
+    slideItems[i].classList.replace("show", "hide");
     if (i == slideItems.length - 1) {
       i = 0;
       i--;
     }
     i++;
-    slideItems[i].classList.remove("hide");
-    slideItems[i].classList.add("show");
+    slideItems[i].classList.replace("hide", "show");
   }
 });
 
-// add Listener to the right-button and move slides to right side
+// move slide to right side
 $btnRight.addEventListener("click", function () {
   if (i == 0) {
-    slideItems[i].classList.remove("show");
-    slideItems[i].classList.add("hide");
+    slideItems[i].classList.replace("show", "hide");
     i = slideItems.length - 1;
-    slideItems[i].classList.remove("hide");
-    slideItems[i].classList.add("show");
+    slideItems[i].classList.replace("hide", "show");
   } else if (i < slideItems.length) {
-    slideItems[i].classList.remove("show");
-    slideItems[i].classList.add("hide");
+    slideItems[i].classList.replace("show", "hide");
     i--;
-    slideItems[i].classList.remove("hide");
-    slideItems[i].classList.add("show");
+    slideItems[i].classList.replace("hide", "show");
   }
 });
 
@@ -77,11 +71,17 @@ const dislikeOff = "pictures/testimonials/dislike-off.jpg";
 //
 // LIKES
 
-let likeElements = document.querySelectorAll(".like");
+const likeElements = document.querySelectorAll(".like");
+const dislikeElements = document.querySelectorAll(".dislike");
 
 likeElements.forEach(function (item) {
   item.addEventListener("click", function () {
-    if (item.src === likeOff) {
+    let disSrc = document.querySelector(".dof").getAttribute("src");
+    if (item.src === likeOff && disSrc === dislikeOn) {
+      item.querySelector("img").src = likeOn;
+      item.src = likeOn;
+      disSrc = document.querySelector(".dof").src = dislikeOff;
+    } else if (item.src === likeOff) {
       item.querySelector("img").src = likeOn;
       item.src = likeOn;
     } else {
@@ -91,37 +91,16 @@ likeElements.forEach(function (item) {
   });
 });
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
 // DISLIKES
 
-let dislikeElements = document.querySelectorAll(".dislike");
 dislikeElements.forEach(function (item) {
   item.addEventListener("click", function () {
-    item.src = item.querySelector("img").getAttribute("src");
-    if (item.src === "pictures/testimonials/dislike-off.jpg") {
+    let likeSrc = document.querySelector(".lof").getAttribute("src");
+    if (item.src === dislikeOff && likeSrc === likeOn) {
+      item.querySelector("img").src = dislikeOn;
+      item.src = dislikeOn;
+      likeSrc = document.querySelector(".lof").src = likeOff;
+    } else if (item.src === dislikeOff) {
       item.querySelector("img").src = dislikeOn;
       item.src = dislikeOn;
     } else {
