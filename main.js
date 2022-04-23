@@ -4,40 +4,40 @@ const $btnRight = document.querySelector(".btn-right");
 
 //get all elements of collection slides
 const $currentItems = document.querySelector(".current-items");
-const items = $currentItems.children;
+const slideItems = $currentItems.children;
 
 // assign position for the first slide
 let i = 0;
 
 // add Listener to the left-button and move slides to left side
 $btnLeft.addEventListener("click", function () {
-  if (items[i].classList.contains("show")) {
-    items[i].classList.remove("show");
-    items[i].classList.add("hide");
-    if (i == items.length - 1) {
+  if (slideItems[i].classList.contains("show")) {
+    slideItems[i].classList.remove("show");
+    slideItems[i].classList.add("hide");
+    if (i == slideItems.length - 1) {
       i = 0;
       i--;
     }
     i++;
-    items[i].classList.remove("hide");
-    items[i].classList.add("show");
+    slideItems[i].classList.remove("hide");
+    slideItems[i].classList.add("show");
   }
 });
 
 // add Listener to the right-button and move slides to right side
 $btnRight.addEventListener("click", function () {
   if (i == 0) {
-    items[i].classList.remove("show");
-    items[i].classList.add("hide");
-    i = items.length - 1;
-    items[i].classList.remove("hide");
-    items[i].classList.add("show");
-  } else if (i < items.length) {
-    items[i].classList.remove("show");
-    items[i].classList.add("hide");
+    slideItems[i].classList.remove("show");
+    slideItems[i].classList.add("hide");
+    i = slideItems.length - 1;
+    slideItems[i].classList.remove("hide");
+    slideItems[i].classList.add("show");
+  } else if (i < slideItems.length) {
+    slideItems[i].classList.remove("show");
+    slideItems[i].classList.add("hide");
     i--;
-    items[i].classList.remove("hide");
-    items[i].classList.add("show");
+    slideItems[i].classList.remove("hide");
+    slideItems[i].classList.add("show");
   }
 });
 
