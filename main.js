@@ -78,10 +78,19 @@ const dislikeOff = "pictures/testimonials/dislike-off.jpg";
 // LIKES
 
 let likeElements = document.querySelectorAll(".like");
+let dislikeElements = document.querySelectorAll(".dislike");
+let dof = document.querySelectorAll(".dof");
 
 likeElements.forEach(function (item) {
   item.addEventListener("click", function () {
-    if (item.src === likeOff) {
+    let disSrc = document.querySelector(".dof").getAttribute("src");
+    if (item.src === likeOff && disSrc === dislikeOn) {
+      console.log(disSrc);
+      item.querySelector("img").src = likeOn;
+      item.src = likeOn;
+      disSrc = document.querySelector(".dof").src = dislikeOff;
+      console.log(disSrc);
+    } else if (item.src === likeOff) {
       item.querySelector("img").src = likeOn;
       item.src = likeOn;
     } else {
@@ -91,37 +100,18 @@ likeElements.forEach(function (item) {
   });
 });
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
 // DISLIKES
 
-let dislikeElements = document.querySelectorAll(".dislike");
 dislikeElements.forEach(function (item) {
   item.addEventListener("click", function () {
-    item.src = item.querySelector("img").getAttribute("src");
-    if (item.src === "pictures/testimonials/dislike-off.jpg") {
+    let likeSrc = document.querySelector(".lof").getAttribute("src");
+    if (item.src === dislikeOff && likeSrc === likeOn) {
+      console.log(likeSrc);
+      item.querySelector("img").src = dislikeOn;
+      item.src = dislikeOn;
+      likeSrc = document.querySelector(".lof").src = likeOff;
+      console.log(likeSrc);
+    } else if (item.src === dislikeOff) {
       item.querySelector("img").src = dislikeOn;
       item.src = dislikeOn;
     } else {
