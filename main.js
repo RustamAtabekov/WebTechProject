@@ -3,34 +3,45 @@ const $btnLeft = document.querySelector(".btn-left");
 const $btnRight = document.querySelector(".btn-right");
 
 //get all elements of collection slides
-const $currentItems = document.querySelector(".current-items");
-const slideItems = $currentItems.children;
+const slides = document.querySelector(".current-slides").children;
 
 // assign position for first slide
 let i = 0;
 
 // move slide to left side
 $btnLeft.addEventListener("click", function () {
-  if (slideItems[i].classList.contains("show")) {
-    slideItems[i].classList.replace("show", "hide");
-    if (i == slideItems.length - 1) {
+  if (slides[i].classList.contains("show")) {
+    slides[i].classList.replace("show", "hide");
+    if (i == slides.length - 1) {
       i = 0;
       i--;
     }
     i++;
-    slideItems[i].classList.replace("hide", "show");
+    slides[i].classList.replace("hide", "show");
   }
 });
 
 // move slide to right side
 $btnRight.addEventListener("click", function () {
   if (i == 0) {
-    slideItems[i].classList.replace("show", "hide");
-    i = slideItems.length - 1;
-    slideItems[i].classList.replace("hide", "show");
-  } else if (i < slideItems.length) {
-    slideItems[i].classList.replace("show", "hide");
+    slides[i].classList.replace("show", "hide");
+    i = slides.length - 1;
+    slides[i].classList.replace("hide", "show");
+  } else if (i < slides.length) {
+    slides[i].classList.replace("show", "hide");
     i--;
-    slideItems[i].classList.replace("hide", "show");
+    slides[i].classList.replace("hide", "show");
+  }
+});
+
+// const likeDislike = document.querySelectorAll(".like-dislike");
+// console.log(likeDislike);
+
+const like = document.querySelector(".lof");
+console.log(like);
+const likeSrc = like.getAttribute("src");
+
+like.addEventListener("click", function () {
+  if (likeSrc === "") {
   }
 });

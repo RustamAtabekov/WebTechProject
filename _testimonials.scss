@@ -8,7 +8,6 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  border: 1px solid black;
 }
 .testimonials-title {
   display: flex;
@@ -92,21 +91,70 @@
     border: 1px solid #377dff;
     border-radius: 10px;
   }
-}
 
-.name-person {
-  font-family: Poppins, Arial, Helvetica, sans-serif;
-  font-size: 27px;
-  font-weight: 400;
-  color: #141d28;
-}
-.profession {
-  font-family: Poppins, Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: #4e5e72;
-  text-transform: uppercase;
-  letter-spacing: 4px;
+  .name-person {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 27px;
+    font-weight: 400;
+    color: #141d28;
+  }
+  .profession {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #4e5e72;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+
+  .like-dislike {
+    width: 400px;
+    height: 100px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .lof {
+    display: block;
+    margin-left: 25px;
+    margin-right: 5px;
+    align-self: flex-start;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .dof {
+    display: block;
+    margin-left: 25px;
+    margin-right: 5px;
+    align-self: flex-end;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .sum-dislikes {
+    display: block;
+    align-self: center;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    color: #377dff;
+  }
+  .sum-likes {
+    display: block;
+    align-self: center;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+
+    color: #377dff;
+  }
 }
 
 .hide {

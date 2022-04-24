@@ -716,7 +716,6 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  border: 1px solid black;
 }
 
 .testimonials-title {
@@ -829,20 +828,82 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   border-radius: 10px;
 }
 
-.name-person {
+.person .name-person {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 27px;
   font-weight: 400;
   color: #141d28;
 }
 
-.profession {
+.person .profession {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #4e5e72;
   text-transform: uppercase;
   letter-spacing: 4px;
+}
+
+.person .like-dislike {
+  width: 400px;
+  height: 100px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.person .lof {
+  display: block;
+  margin-left: 25px;
+  margin-right: 5px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.person .lof:hover {
+  cursor: pointer;
+}
+
+.person .dof {
+  display: block;
+  margin-left: 25px;
+  margin-right: 5px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.person .dof:hover {
+  cursor: pointer;
+}
+
+.person .sum-dislikes {
+  display: block;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #377dff;
+}
+
+.person .sum-likes {
+  display: block;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #377dff;
 }
 
 .hide {
