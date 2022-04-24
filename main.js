@@ -34,14 +34,20 @@ $btnRight.addEventListener("click", function () {
   }
 });
 
-// const likeDislike = document.querySelectorAll(".like-dislike");
-// console.log(likeDislike);
+// assign src to const
+const likeOn = "pictures/testimonials/like-on.jpg";
+const likeOff = "pictures/testimonials/like-off.jpg";
+const dislikeOn = "pictures/testimonials/dislike-on.jpg";
+const dislikeOff = "pictures/testimonials/dislike-off.jpg";
 
-const like = document.querySelector(".lof");
-console.log(like);
-const likeSrc = like.getAttribute("src");
+const likeDislike = document.querySelector(".like-dislike");
+let allSrc = likeDislike.children;
 
-like.addEventListener("click", function () {
-  if (likeSrc === "") {
-  }
-});
+let d = allSrc[2];
+let l = allSrc[0];
+console.log(d.src);
+console.log(l.src);
+d = dislikeOn;
+l = likeOn;
+console.log(d);
+console.log(l);
