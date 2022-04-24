@@ -34,20 +34,45 @@ $btnRight.addEventListener("click", function () {
   }
 });
 
-// assign src to const
+// short name src
 const likeOn = "pictures/testimonials/like-on.jpg";
 const likeOff = "pictures/testimonials/like-off.jpg";
 const dislikeOn = "pictures/testimonials/dislike-on.jpg";
 const dislikeOff = "pictures/testimonials/dislike-off.jpg";
 
-const likeDislike = document.querySelector(".like-dislike");
-let allSrc = likeDislike.children;
+const likeDislike = document.querySelectorAll(".current-slides");
 
-let d = allSrc[2];
-let l = allSrc[0];
-console.log(d.src);
-console.log(l.src);
-d = dislikeOn;
-l = likeOn;
-console.log(d);
-console.log(l);
+let lofCol = document.querySelectorAll(".lof");
+let dofCol = document.querySelectorAll(".dof");
+
+lofCol.forEach(function (item) {
+  item.addEventListener("click", function () {
+    let likeSrc = item.getAttribute("src");
+    let disSrc = document.querySelector(".dof").getAttribute("src");
+
+    if (likeSrc === likeOff && disSrc === dislikeOn) {
+      item.src = likeOn;
+      disSrc = document.querySelector(".dof").setAttribute("src", dislikeOff);
+    } else if (likeSrc === likeOff) {
+      item.src = likeOn;
+    } else {
+      item.src = likeOff;
+    }
+  });
+});
+
+dofCol.forEach(function (item) {
+  item.addEventListener("click", function () {
+    let disSrc = item.getAttribute("src");
+    let likeSrc = document.querySelector(".lof").getAttribute("src");
+
+    if (disSrc === dislikeOff && likeSrc === likeOn) {
+      item.src = dislikeOn;
+      likeSrc = document.querySelector(".lof").setAttribute("src", likeOff);
+    } else if (disSrc === dislikeOff) {
+      item.src = dislikeOn;
+    } else {
+      item.src = dislikeOff;
+    }
+  });
+});
