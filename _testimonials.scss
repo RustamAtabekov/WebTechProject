@@ -140,13 +140,13 @@
   margin-left: 20px;
   margin-right: 20px;
   img {
-    display: block;
+    // display: block;
     &:hover {
       cursor: pointer;
     }
   }
   .like {
-    display: block;
+    // display: block;
     align-self: flex-start;
   }
   .sum-likes {
@@ -167,13 +167,13 @@
   margin-left: 20px;
   margin-right: 20px;
   img {
-    display: block;
+    // display: block;
     &:hover {
       cursor: pointer;
     }
   }
   .dislike {
-    display: block;
+    // display: block;
     align-self: flex-end;
   }
   .sum-dislikes {

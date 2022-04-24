@@ -74,9 +74,16 @@ const dislikeOff = "pictures/testimonials/dislike-off.jpg";
 const likeElements = document.querySelectorAll(".like");
 const dislikeElements = document.querySelectorAll(".dislike");
 
+// likeElements.forEach(function (item) {
+//   item.addEventListener("click", function (event) {
+//     console.log(event.target);
+//   });
+// });
+
 likeElements.forEach(function (item) {
   item.addEventListener("click", function () {
     let disSrc = document.querySelector(".dof").getAttribute("src");
+
     if (item.src === likeOff && disSrc === dislikeOn) {
       item.querySelector("img").src = likeOn;
       item.src = likeOn;
@@ -96,6 +103,7 @@ likeElements.forEach(function (item) {
 dislikeElements.forEach(function (item) {
   item.addEventListener("click", function () {
     let likeSrc = document.querySelector(".lof").getAttribute("src");
+
     if (item.src === dislikeOff && likeSrc === likeOn) {
       item.querySelector("img").src = dislikeOn;
       item.src = dislikeOn;

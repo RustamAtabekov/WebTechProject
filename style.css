@@ -893,16 +893,11 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   margin-right: 20px;
 }
 
-.likes img {
-  display: block;
-}
-
 .likes img:hover {
   cursor: pointer;
 }
 
 .likes .like {
-  display: block;
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
@@ -931,16 +926,11 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   margin-right: 20px;
 }
 
-.dislikes img {
-  display: block;
-}
-
 .dislikes img:hover {
   cursor: pointer;
 }
 
 .dislikes .dislike {
-  display: block;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
