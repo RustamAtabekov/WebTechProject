@@ -51,17 +51,28 @@ for (let i of lofCol) {
     let currentDisSrc = i.parentElement
       .querySelector(".dof")
       .getAttribute("src");
-    // checking and set src
+
+    //get sum-likes and sum-dislikes, create counters
+    let sumLikes = i.parentElement.querySelector(".sum-likes");
+    let counterLikes = Number(sumLikes.innerHTML);
+    let sumDislikes = i.parentElement.querySelector(".sum-dislikes");
+    let counterDislikes = Number(sumDislikes.innerHTML);
+
+    // checking, set src and compute counters
     if (
       event.target.getAttribute("src") === likeOff &&
       currentDisSrc === dislikeOn
     ) {
       event.target.setAttribute("src", likeOn);
       i.parentElement.querySelector(".dof").setAttribute("src", dislikeOff);
+      sumLikes.innerHTML = counterLikes + 1;
+      sumDislikes.innerHTML = counterDislikes - 1;
     } else if (event.target.getAttribute("src") === likeOff) {
       event.target.setAttribute("src", likeOn);
+      sumLikes.innerHTML = counterLikes + 1;
     } else {
       event.target.setAttribute("src", likeOff);
+      sumLikes.innerHTML = counterLikes - 1;
     }
   });
 }
@@ -73,17 +84,28 @@ for (let i of dofCol) {
     let currentLikeSrc = i.parentElement
       .querySelector(".lof")
       .getAttribute("src");
-    // checking and set src
+
+    //get sum-likes and sum-dislikes, create counters
+    let sumDislikes = i.parentElement.querySelector(".sum-dislikes");
+    let counterDislikes = Number(sumDislikes.innerHTML);
+    let sumLikes = i.parentElement.querySelector(".sum-likes");
+    let counterLikes = Number(sumLikes.innerHTML);
+
+    // checking, set src and compute counters
     if (
       event.target.getAttribute("src") === dislikeOff &&
       currentLikeSrc === likeOn
     ) {
       event.target.setAttribute("src", dislikeOn);
       i.parentElement.querySelector(".lof").setAttribute("src", likeOff);
+      sumDislikes.innerHTML = counterDislikes + 1;
+      sumLikes.innerHTML = counterLikes - 1;
     } else if (event.target.getAttribute("src") === dislikeOff) {
       event.target.setAttribute("src", dislikeOn);
+      sumDislikes.innerHTML = counterDislikes + 1;
     } else {
       event.target.setAttribute("src", dislikeOff);
+      sumDislikes.innerHTML = counterDislikes - 1;
     }
   });
 }
