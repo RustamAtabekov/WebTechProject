@@ -917,6 +917,57 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   margin-right: auto;
 }
 
+.add-rem-comments {
+  width: 1200px;
+  height: 120px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.add-rem-comments .btn-add-comment {
+  width: 200px;
+  height: 100px;
+  margin-left: 50px;
+  margin-right: 20px;
+  text-align: center;
+  padding: 1em;
+  background-color: #377dff;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #fff;
+  border: none;
+}
+
+.add-rem-comments .btn-add-comment:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 4px 4px 10px gray;
+          box-shadow: 4px 4px 10px gray;
+}
+
+.add-rem-comments .btn-remove-comment {
+  width: 200px;
+  height: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  padding: 1em;
+  border: 2px solid #377dff;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #377dff;
+  background-color: #fff;
+}
+
+.add-rem-comments .btn-remove-comment:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 4px 4px 10px gray;
+          box-shadow: 4px 4px 10px gray;
+}
+
 /* Beginning of section New Era */
 .newera {
   width: 1200px;
