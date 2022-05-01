@@ -166,3 +166,49 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.add-rem-comments {
+  width: 1200px;
+  height: 120px;
+  text-align: center;
+  margin-top: 50px;
+  .btn-add-comment {
+    width: 200px;
+    height: 100px;
+    margin-left: 50px;
+    margin-right: 20px;
+    text-align: center;
+    padding: 1em;
+    background-color: #377dff;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #fff;
+    border: none;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 4px 4px 10px gray;
+    }
+  }
+
+  .btn-remove-comment {
+    width: 200px;
+    height: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    padding: 1em;
+    border: 2px solid #377dff;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #377dff;
+    background-color: #fff;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 4px 4px 10px gray;
+    }
+  }
+}
