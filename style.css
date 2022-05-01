@@ -917,17 +917,17 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   margin-right: auto;
 }
 
-.add-rem-comments {
+.comment-buttons {
   width: 1200px;
   height: 120px;
   text-align: center;
   margin-top: 50px;
 }
 
-.add-rem-comments .btn-add-comment {
+.comment-buttons .btn-add-comment {
   width: 200px;
   height: 100px;
-  margin-left: 50px;
+  margin-left: 20px;
   margin-right: 20px;
   text-align: center;
   padding: 1em;
@@ -940,13 +940,13 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   border: none;
 }
 
-.add-rem-comments .btn-add-comment:hover {
+.comment-buttons .btn-add-comment:hover {
   cursor: pointer;
   -webkit-box-shadow: 4px 4px 10px gray;
           box-shadow: 4px 4px 10px gray;
 }
 
-.add-rem-comments .btn-remove-comment {
+.comment-buttons .btn-remove-comment {
   width: 200px;
   height: 100px;
   margin-left: 20px;
@@ -962,10 +962,131 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   background-color: #fff;
 }
 
-.add-rem-comments .btn-remove-comment:hover {
+.comment-buttons .btn-remove-comment:hover {
   cursor: pointer;
   -webkit-box-shadow: 4px 4px 10px gray;
           box-shadow: 4px 4px 10px gray;
+}
+
+.form {
+  width: 1200px;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #377dff;
+}
+
+.form .select-avatar {
+  width: 800px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.form .input-name {
+  width: 800px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0.5em;
+  padding-left: 20px;
+  font-size: 24px;
+  text-align: left;
+  border: none;
+}
+
+.form .input-profession {
+  width: 800px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0.5em;
+  padding-left: 20px;
+  text-align: left;
+  font-size: 24px;
+  border: none;
+}
+
+.form .textarea-comment {
+  width: 800px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 0.5em;
+  padding-left: 20px;
+  font-size: 24px;
+  text-align: left;
+  border: none;
+}
+
+.hide-form {
+  display: none;
+}
+
+.save-hide-buttons {
+  width: 1200px;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.save-hide-buttons .save-comment {
+  width: 300px;
+  height: 80px;
+  margin-right: 102px;
+  text-align: center;
+  padding: 1em;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #377dff;
+  background-color: #fff;
+  border: none;
+}
+
+.save-hide-buttons .save-comment:hover {
+  cursor: pointer;
+  background-color: #377dff;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.save-hide-buttons .clear-and-return {
+  width: 300px;
+  height: 80px;
+  margin-left: 102px;
+  text-align: center;
+  padding: 1em;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #377dff;
+  background-color: #fff;
+  border: none;
+}
+
+.save-hide-buttons .clear-and-return:hover {
+  cursor: pointer;
+  background-color: #377dff;
+  color: #fff;
+  border: 2px solid #fff;
 }
 
 /* Beginning of section New Era */
@@ -1072,6 +1193,7 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   line-height: 16px;
   font-weight: 400;
   color: #fff;
+  border: none;
 }
 
 .newera .container-newera .newera-title-texts .newera-buttons .newera-start-now:hover {
@@ -1092,13 +1214,14 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
-  color: #fff;
+  color: #377dff;
+  background-color: #fff;
 }
 
 .newera .container-newera .newera-title-texts .newera-buttons .newera-learn-more:hover {
   cursor: pointer;
-  background-color: #fff;
-  color: #377dff;
+  background-color: #377dff;
+  color: #fff;
 }
 
 /* Beginning of section New Era */

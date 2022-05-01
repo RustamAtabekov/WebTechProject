@@ -167,7 +167,7 @@
   margin-right: auto;
 }
 
-.add-rem-comments {
+.comment-buttons {
   width: 1200px;
   height: 120px;
   text-align: center;
@@ -175,7 +175,7 @@
   .btn-add-comment {
     width: 200px;
     height: 100px;
-    margin-left: 50px;
+    margin-left: 20px;
     margin-right: 20px;
     text-align: center;
     padding: 1em;
@@ -209,6 +209,105 @@
     &:hover {
       cursor: pointer;
       box-shadow: 4px 4px 10px gray;
+    }
+  }
+}
+
+.form {
+  width: 1200px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #377dff;
+  .select-avatar {
+    width: 800px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border: none;
+  }
+  .input-name {
+    width: 800px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0.5em;
+    padding-left: 20px;
+    font-size: 24px;
+    text-align: left;
+    border: none;
+  }
+  .input-profession {
+    width: 800px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0.5em;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 24px;
+    border: none;
+  }
+  .textarea-comment {
+    width: 800px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 0.5em;
+    padding-left: 20px;
+    font-size: 24px;
+    text-align: left;
+    border: none;
+  }
+}
+.hide-form {
+  display: none;
+}
+.show-form {
+}
+
+.save-hide-buttons {
+  width: 1200px;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .save-comment {
+    width: 300px;
+    height: 80px;
+    margin-right: 102px;
+    text-align: center;
+    padding: 1em;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #377dff;
+    background-color: #fff;
+    border: none;
+    &:hover {
+      cursor: pointer;
+      background-color: #377dff;
+      color: #fff;
+      border: 2px solid #fff;
+    }
+  }
+  .clear-and-return {
+    width: 300px;
+    height: 80px;
+    margin-left: 102px;
+    text-align: center;
+    padding: 1em;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #377dff;
+    background-color: #fff;
+    border: none;
+    &:hover {
+      cursor: pointer;
+      background-color: #377dff;
+      color: #fff;
+      border: 2px solid #fff;
     }
   }
 }

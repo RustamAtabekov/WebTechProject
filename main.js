@@ -1,3 +1,5 @@
+/****************** B U T T O N S   L E F T   A N D   R I G H T **************/
+
 // get left and right buttons of slider
 const $btnLeft = document.querySelector(".btn-left");
 const $btnRight = document.querySelector(".btn-right");
@@ -33,6 +35,8 @@ $btnRight.addEventListener("click", function () {
     slides[posSlide].classList.replace("hide", "show");
   }
 });
+
+/********** L I K E S   A N D  D I S L I K E S ************/
 
 // get collection images likes and dislikes
 let lofCol = document.getElementsByClassName("lof");
@@ -109,3 +113,19 @@ for (let i of dofCol) {
     }
   });
 }
+
+/********* B U T T O N S  C O M M E N T S,  A D D  and  R E M O V E *********/
+
+const commentButtons = document.querySelector(".comment-buttons").children;
+const btnAddComment = commentButtons[0];
+console.log(btnAddComment);
+
+const form = document.querySelector(".form");
+console.log(form);
+
+btnAddComment.addEventListener("click", function (event) {
+  if (form.classList.contains("hide-form")) {
+    form.classList.remove("hide-form");
+    form.classList.add("show-form");
+  }
+});
