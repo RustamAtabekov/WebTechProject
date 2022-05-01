@@ -12,7 +12,7 @@ let posSlide = 0;
 $btnLeft.addEventListener("click", function () {
   if (slides[posSlide].classList.contains("show")) {
     slides[posSlide].classList.replace("show", "hide");
-    if (posSlide == slides.length - 1) {
+    if (posSlide === slides.length - 1) {
       posSlide = 0;
       posSlide--;
     }
@@ -23,7 +23,7 @@ $btnLeft.addEventListener("click", function () {
 
 // move slide to right side
 $btnRight.addEventListener("click", function () {
-  if (posSlide == 0) {
+  if (posSlide === 0) {
     slides[posSlide].classList.replace("show", "hide");
     posSlide = slides.length - 1;
     slides[posSlide].classList.replace("hide", "show");
