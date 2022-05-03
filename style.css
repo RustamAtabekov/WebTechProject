@@ -991,11 +991,38 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   background-color: #377dff;
 }
 
-.form .select-avatar {
+.form .btn-select-avatar {
   width: 800px;
-  margin-top: 40px;
-  margin-bottom: 20px;
+  height: 80px;
+  margin-top: 20px;
+  text-align: center;
+  padding: 1em;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #377dff;
+  background-color: #fff;
   border: none;
+}
+
+.form .btn-select-avatar:hover {
+  cursor: pointer;
+  background-color: #377dff;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.form .avatars > img {
+  display: inline-block;
+  margin-top: 10px;
+  border-radius: 50%;
+}
+
+.form .avatars > img:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  cursor: pointer;
 }
 
 .form .input-name {
@@ -1091,6 +1118,10 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   background-color: #377dff;
   color: #fff;
   border: 2px solid #fff;
+}
+
+.hide-avatars {
+  display: none;
 }
 
 /* Beginning of section New Era */

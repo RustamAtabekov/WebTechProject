@@ -224,11 +224,34 @@
   justify-content: space-evenly;
   align-items: center;
   background-color: #377dff;
-  .select-avatar {
+  .btn-select-avatar {
     width: 800px;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    height: 80px;
+    margin-top: 20px;
+    text-align: center;
+    padding: 1em;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #377dff;
+    background-color: #fff;
     border: none;
+    &:hover {
+      cursor: pointer;
+      background-color: #377dff;
+      color: #fff;
+      border: 2px solid #fff;
+    }
+  }
+  .avatars > img {
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 50%;
+    &:hover {
+      transform: scale(0.9);
+      cursor: pointer;
+    }
   }
   .input-name {
     width: 800px;
@@ -313,4 +336,8 @@
       border: 2px solid #fff;
     }
   }
+}
+
+.hide-avatars {
+  display: none;
 }
