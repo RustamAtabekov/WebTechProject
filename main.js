@@ -115,17 +115,20 @@ for (let i of dofCol) {
 }
 
 /********* B U T T O N S  C O M M E N T S,  A D D  and  R E M O V E *********/
-
+// get collection buttons
+const commentButtonsColl = document.querySelector(".comment-buttons");
 const commentButtons = document.querySelector(".comment-buttons").children;
 const btnAddComment = commentButtons[0];
-console.log(btnAddComment);
+const btnRemoveComment = commentButtons[1];
 
+// get form
 const form = document.querySelector(".form");
-console.log(form);
 
+// set Listener to button add-comment, then hide it by click, and show form
 btnAddComment.addEventListener("click", function (event) {
   if (form.classList.contains("hide-form")) {
     form.classList.remove("hide-form");
     form.classList.add("show-form");
+    commentButtonsColl.classList.add("hide-comment-buttons");
   }
 });

@@ -212,6 +212,9 @@
     }
   }
 }
+.hide-comment-buttons {
+  display: none;
+}
 
 .form {
   width: 1200px;
@@ -264,7 +267,7 @@
 .show-form {
 }
 
-.save-hide-buttons {
+.save-clear-buttons {
   width: 1200px;
   padding: 1em;
   display: flex;

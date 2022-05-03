@@ -446,10 +446,9 @@
               <p class="testimonial">
                 Donec eget elit vel urna varius pharetra. Suspendisse sodales
                 venenatis lorem nec tincidunt. Donec dignissim purus ut nulla
-                ultricies.Donec dignissim purus ut nulla ultricies.Donec
-                dignissim purus ut nulla ultricies.Donec eget elit vel urna
-                varius pharetra. Suspendisse sodales venenatis lorem nec
-                tincidunt.
+                ultricies.Donec dignissim purus ut nulla ultricies.Donec eget
+                elit vel urna varius pharetra. Suspendisse sodales venenatis aa
+                elit vel urna varius pharetra. Suspendisse sodales
               </p>
               <figcaption>
                 <p class="name-person">John Doe</p>
@@ -493,11 +492,17 @@
             <option value="">5</option>
             <option value="">6</option>
           </select>
-          <input class="input-name" placeholder="Enter your name" type="text" />
+          <input
+            class="input-name"
+            placeholder="Enter your name"
+            type="text"
+            maxlength="50"
+          />
           <input
             class="input-profession"
             placeholder="Enter your profession"
             type="text"
+            maxlength="50"
           />
           <textarea
             class="textarea-comment"
@@ -505,9 +510,10 @@
             name="textarea-comment"
             id=""
             cols="100"
-            rows="5"
+            rows="6"
+            maxlength="300"
           ></textarea>
-          <div class="save-hide-buttons">
+          <div class="save-clear-buttons">
             <button class="save-comment">Save comment</button>
             <button class="clear-and-return">Clear and return</button>
           </div>
