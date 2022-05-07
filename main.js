@@ -1,3 +1,5 @@
+/****************** B U T T O N S   L E F T   A N D   R I G H T **************/
+
 // get left and right buttons of slider
 const $btnLeft = document.querySelector(".btn-left");
 const $btnRight = document.querySelector(".btn-right");
@@ -33,6 +35,8 @@ $btnRight.addEventListener("click", function () {
     slides[posSlide].classList.replace("hide", "show");
   }
 });
+
+/********** L I K E S   A N D  D I S L I K E S ************/
 
 // get collection images likes and dislikes
 let lofCol = document.getElementsByClassName("lof");
@@ -109,3 +113,71 @@ for (let i of dofCol) {
     }
   });
 }
+
+/********* B U T T O N S  C O M M E N T ,  A D D  and  R E M O V E *********/
+// get collection buttons
+const commentButtonsColl = document.querySelector(".comment-buttons");
+const commentButtons = document.querySelector(".comment-buttons").children;
+const btnAddComment = commentButtons[0];
+const btnRemoveComment = commentButtons[1];
+
+// get form
+const form = document.querySelector(".form");
+const btnSelectAvatar = document.querySelector(".btn-select-avatar");
+const avatars = document.querySelector(".avatars");
+const avatarsArray = avatars.children;
+
+// set Listener to button add-comment, then hide it by click, and show form
+btnAddComment.addEventListener("click", function (event) {
+  if (form.classList.contains("hide-form")) {
+    form.classList.remove("hide-form");
+    form.classList.add("show-form");
+    commentButtonsColl.classList.add("hide-comment-buttons");
+  }
+});
+
+// set listener for select avatar,
+// get attribute src of avatar,
+// set src to personCard
+
+btnSelectAvatar.addEventListener("click", function (event) {
+  if (avatars.classList.contains("hide-avatars")) {
+    avatars.classList.remove("hide-avatars");
+  }
+});
+
+for (let i of avatarsArray) {
+  let personAvatar = document.querySelector(".person-avatar");
+  i.addEventListener("click", function (event) {
+    let src = event.target.getAttribute("src");
+    personAvatar.setAttribute("src", src);
+    // personAvatar.style.width = "200px";
+    // personAvatar.style.height = "200px";
+  });
+}
+
+// set listener for input name, profession
+// get value name, profession
+// set to person
+
+const person = slides[slides.length - 1];
+
+let namePerson = person.querySelector(".name-person");
+let professionPerson = person.querySelector(".profession");
+let testimonialPerson = person.querySelector(".testimonial");
+
+const inputName = document.getElementById("input-name");
+const inputProfession = document.getElementById("input-profession");
+const textareaComment = document.getElementById("textarea-comment");
+
+const saveComment = document.querySelector(".save-comment");
+
+saveComment.addEventListener("click", function () {
+  namePerson.innerHTML = inputName.value;
+  professionPerson.innerHTML = inputProfession.value;
+  testimonialPerson.innerHTML = textareaComment.value;
+
+  inputName.value = "Enter your name";
+  inputProfession.value = "Enter your profession";
+  textareaComment.value = "Write your comment please";
+});

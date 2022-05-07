@@ -446,8 +446,9 @@
               <p class="testimonial">
                 Donec eget elit vel urna varius pharetra. Suspendisse sodales
                 venenatis lorem nec tincidunt. Donec dignissim purus ut nulla
-                ultricies.Donec dignissim purus ut nulla ultricies.Donec
-                dignissim purus ut nulla ultricies.
+                ultricies.Donec dignissim purus ut nulla ultricies.Donec eget
+                elit vel urna varius pharetra. Suspendisse sodales venenatis aa
+                elit vel urna varius pharetra. Suspendisse sodales
               </p>
               <figcaption>
                 <p class="name-person">John Doe</p>
@@ -469,7 +470,35 @@
                 <span class="sum-dislikes">3</span>
               </div>
             </div>
-            <!-- end person 3 -->
+
+            <div class="person hide">
+              <picture>
+                <img class="person-avatar" alt="" />
+              </picture>
+              <p class="testimonial">
+                Here maybe your comment, click to button
+              </p>
+              <figcaption>
+                <p class="name-person">Your name</p>
+                <p class="profession">Your profession</p>
+              </figcaption>
+
+              <div class="like-dislike">
+                <img
+                  class="lof"
+                  src="pictures/testimonials/like-off.jpg"
+                  alt="picture"
+                />
+                <span class="sum-likes">0</span>
+                <img
+                  class="dof"
+                  src="pictures/testimonials/dislike-off.jpg"
+                  alt="picture"
+                />
+                <span class="sum-dislikes">0</span>
+              </div>
+            </div>
+            <!-- end person 4 -->
           </div>
           <!-- end current slide -->
 
@@ -478,10 +507,56 @@
             <img src="pictures/testimonials/arrow-right.png" alt="picture" />
           </button>
         </div>
-        <div class="add-rem-comments">
+        <div class="comment-buttons">
           <button class="btn-add-comment">Add comment</button>
           <button class="btn-remove-comment">Remove comment</button>
         </div>
+        <form class="form hide-form" action="">
+          <div class="btn-select-avatar">Select avatar</div>
+          <div class="avatars hide-avatars">
+            <img src="pictures/testimonials/avatar1.jpg" alt="picture" />
+            <img src="pictures/testimonials/avatar2.jpg" alt="picture" />
+            <img src="pictures/testimonials/avatar3.jpg" alt="picture" />
+            <img src="pictures/testimonials/avatar4.jpg" alt="picture" />
+            <img src="pictures/testimonials/avatar5.jpg" alt="picture" />
+            <img src="pictures/testimonials/avatar6.jpg" alt="picture" />
+            <img src="pictures/testimonials/avatar7.jpg" alt="picture" />
+            <img src="pictures/testimonials/avatar8.jpg" alt="picture" />
+            <img src="pictures/testimonials/avatar9.jpg" alt="picture" />
+            <img src="pictures/testimonials/avatar10.jpg" alt="picture" />
+            <img src="pictures/testimonials/avatar11.jpg" alt="picture" />
+            <img src="pictures/testimonials/avatar12.jpg" alt="picture" />
+            <img src="pictures/testimonials/avatar13.jpg" alt="picture" />
+            <img src="pictures/testimonials/avatar14.jpg" alt="picture" />
+          </div>
+          <input
+            id="input-name"
+            placeholder="Enter your name"
+            type="text"
+            maxlength="50"
+            value=""
+          />
+          <input
+            id="input-profession"
+            placeholder="Enter your profession"
+            type="text"
+            maxlength="50"
+            value=""
+          />
+          <textarea
+            type="text"
+            placeholder="Write your comment please"
+            name="textarea-comment"
+            id="textarea-comment"
+            cols="100"
+            rows="6"
+            maxlength="300"
+          ></textarea>
+          <div class="save-clear-buttons">
+            <div class="save-comment">Save comment</div>
+            <div class="clear-and-return">Clear and return</div>
+          </div>
+        </form>
       </section>
       <!-- Ending of section Testimonials -->
 
@@ -502,8 +577,8 @@
                 Build a product that will sell well
               </p>
               <div class="newera-buttons">
-                <div class="newera-start-now">Start Now</div>
-                <div class="newera-learn-more">Learn More</div>
+                <button class="newera-start-now">Start Now</button>
+                <button class="newera-learn-more">Learn More</button>
               </div>
             </div>
           </div>
