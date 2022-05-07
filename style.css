@@ -1013,8 +1013,15 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   border: 2px solid #fff;
 }
 
+.form .avatars {
+  width: 800px;
+  margin-top: 20px;
+  padding: 1em;
+}
+
 .form .avatars > img {
   display: inline-block;
+  width: 100px;
   margin-top: 10px;
   border-radius: 50%;
 }

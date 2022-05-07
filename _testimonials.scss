@@ -244,8 +244,14 @@
       border: 2px solid #fff;
     }
   }
+  .avatars {
+    width: 800px;
+    margin-top: 20px;
+    padding: 1em;
+  }
   .avatars > img {
     display: inline-block;
+    width: 100px;
     margin-top: 10px;
     border-radius: 50%;
     &:hover {
@@ -286,8 +292,6 @@
 }
 .hide-form {
   display: none;
-}
-.show-form {
 }
 
 .save-clear-buttons {

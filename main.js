@@ -125,8 +125,8 @@ const btnRemoveComment = commentButtons[1];
 const form = document.querySelector(".form");
 const btnSelectAvatar = document.querySelector(".btn-select-avatar");
 const avatars = document.querySelector(".avatars");
-console.log(btnSelectAvatar);
-console.log(avatars);
+const avatarsArray = avatars.children;
+
 // set Listener to button add-comment, then hide it by click, and show form
 btnAddComment.addEventListener("click", function (event) {
   if (form.classList.contains("hide-form")) {
@@ -136,8 +136,19 @@ btnAddComment.addEventListener("click", function (event) {
   }
 });
 
+// set listener for select avatar,
+// get attribute src of avatar,
+// set src to personCard
+
 btnSelectAvatar.addEventListener("click", function (event) {
   if (avatars.classList.contains("hide-avatars")) {
     avatars.classList.remove("hide-avatars");
   }
 });
+
+for (let i of avatarsArray) {
+  i.addEventListener("click", function (event) {
+    let currentAvatarSrc = event.target.getAttribute("src");
+    console.log(currentAvatarSrc);
+  });
+}
