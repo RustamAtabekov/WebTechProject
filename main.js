@@ -146,9 +146,10 @@ btnSelectAvatar.addEventListener("click", function (event) {
   }
 });
 
+let card = {};
 for (let i of avatarsArray) {
   i.addEventListener("click", function (event) {
-    let currentAvatarSrc = event.target.getAttribute("src");
-    console.log(currentAvatarSrc);
+    card.avatar = event.target.getAttribute("src");
+    console.log(card.avatar);
   });
 }
