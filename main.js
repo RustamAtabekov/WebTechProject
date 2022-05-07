@@ -146,10 +146,38 @@ btnSelectAvatar.addEventListener("click", function (event) {
   }
 });
 
-let card = {};
 for (let i of avatarsArray) {
+  let personAvatar = document.querySelector(".person-avatar");
   i.addEventListener("click", function (event) {
-    card.avatar = event.target.getAttribute("src");
-    console.log(card.avatar);
+    let src = event.target.getAttribute("src");
+    personAvatar.setAttribute("src", src);
+    // personAvatar.style.width = "200px";
+    // personAvatar.style.height = "200px";
   });
 }
+
+// set listener for input name, profession
+// get value name, profession
+// set to person
+
+const person = slides[slides.length - 1];
+
+let namePerson = person.querySelector(".name-person");
+let professionPerson = person.querySelector(".profession");
+let testimonialPerson = person.querySelector(".testimonial");
+
+const inputName = document.getElementById("input-name");
+const inputProfession = document.getElementById("input-profession");
+const textareaComment = document.getElementById("textarea-comment");
+
+const saveComment = document.querySelector(".save-comment");
+
+saveComment.addEventListener("click", function () {
+  namePerson.innerHTML = inputName.value;
+  professionPerson.innerHTML = inputProfession.value;
+  testimonialPerson.innerHTML = textareaComment.value;
+
+  inputName.value = "Enter your name";
+  inputProfession.value = "Enter your profession";
+  textareaComment.value = "Write your comment please";
+});

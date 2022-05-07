@@ -1021,6 +1021,7 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
 
 .form .avatars > img {
   display: inline-block;
+  height: 100px;
   width: 100px;
   margin-top: 10px;
   border-radius: 50%;
@@ -1032,7 +1033,7 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   cursor: pointer;
 }
 
-.form .input-name {
+.form #input-name {
   width: 800px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -1043,7 +1044,7 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   border: none;
 }
 
-.form .input-profession {
+.form #input-profession {
   width: 800px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -1054,7 +1055,7 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   border: none;
 }
 
-.form .textarea-comment {
+.form #textarea-comment {
   width: 800px;
   margin-top: 20px;
   margin-bottom: 40px;
@@ -1087,8 +1088,8 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   width: 300px;
   height: 80px;
   margin-right: 102px;
+  padding-top: 30px;
   text-align: center;
-  padding: 1em;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 16px;
@@ -1110,7 +1111,7 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   height: 80px;
   margin-left: 102px;
   text-align: center;
-  padding: 1em;
+  padding-top: 30px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 16px;
@@ -1129,6 +1130,12 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
 
 .hide-avatars {
   display: none;
+}
+
+.person-avatar {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
 }
 
 /* Beginning of section New Era */

@@ -470,7 +470,35 @@
                 <span class="sum-dislikes">3</span>
               </div>
             </div>
-            <!-- end person 3 -->
+
+            <div class="person hide">
+              <picture>
+                <img class="person-avatar" alt="" />
+              </picture>
+              <p class="testimonial">
+                Here maybe your comment, click to button
+              </p>
+              <figcaption>
+                <p class="name-person">Your name</p>
+                <p class="profession">Your profession</p>
+              </figcaption>
+
+              <div class="like-dislike">
+                <img
+                  class="lof"
+                  src="pictures/testimonials/like-off.jpg"
+                  alt="picture"
+                />
+                <span class="sum-likes">0</span>
+                <img
+                  class="dof"
+                  src="pictures/testimonials/dislike-off.jpg"
+                  alt="picture"
+                />
+                <span class="sum-dislikes">0</span>
+              </div>
+            </div>
+            <!-- end person 4 -->
           </div>
           <!-- end current slide -->
 
@@ -502,29 +530,31 @@
             <img src="pictures/testimonials/avatar14.jpg" alt="picture" />
           </div>
           <input
-            class="input-name"
+            id="input-name"
             placeholder="Enter your name"
             type="text"
             maxlength="50"
+            value=""
           />
           <input
-            class="input-profession"
+            id="input-profession"
             placeholder="Enter your profession"
             type="text"
             maxlength="50"
+            value=""
           />
           <textarea
-            class="textarea-comment"
+            type="text"
             placeholder="Write your comment please"
             name="textarea-comment"
-            id=""
+            id="textarea-comment"
             cols="100"
             rows="6"
             maxlength="300"
           ></textarea>
           <div class="save-clear-buttons">
-            <button class="save-comment">Save comment</button>
-            <button class="clear-and-return">Clear and return</button>
+            <div class="save-comment">Save comment</div>
+            <div class="clear-and-return">Clear and return</div>
           </div>
         </form>
       </section>
