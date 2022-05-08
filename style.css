@@ -1033,6 +1033,10 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   cursor: pointer;
 }
 
+.form .select-avatar-border {
+  border: 5px solid black;
+}
+
 .form #input-name {
   width: 800px;
   margin-top: 20px;
