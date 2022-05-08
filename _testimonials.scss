@@ -244,6 +244,16 @@
       border: 2px solid #fff;
     }
   }
+  .label {
+    margin-top: 50px;
+    margin-bottom: 0px;
+    align-self: 30px;
+    width: max-content;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: white;
+  }
+
   .avatars {
     width: 800px;
     margin-top: 20px;
@@ -263,9 +273,10 @@
   .select-avatar-border {
     border: 5px solid black;
   }
+
   #input-name {
     width: 800px;
-    margin-top: 20px;
+    margin-top: 4px;
     margin-bottom: 20px;
     padding: 0.5em;
     padding-left: 20px;
@@ -275,7 +286,7 @@
   }
   #input-profession {
     width: 800px;
-    margin-top: 20px;
+    margin-top: 4px;
     margin-bottom: 20px;
     padding: 0.5em;
     padding-left: 20px;
@@ -285,7 +296,7 @@
   }
   #textarea-comment {
     width: 800px;
-    margin-top: 20px;
+    margin-top: 4px;
     margin-bottom: 40px;
     padding: 0.5em;
     padding-left: 20px;
@@ -294,6 +305,7 @@
     border: none;
   }
 }
+
 .hide-form {
   display: none;
 }
@@ -311,8 +323,8 @@
     padding-top: 30px;
     text-align: center;
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 24px;
+    line-height: 24px;
     font-weight: 400;
     color: #377dff;
     background-color: #fff;
@@ -331,8 +343,8 @@
     text-align: center;
     padding-top: 30px;
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 24px;
+    line-height: 24px;
     font-weight: 400;
     color: #377dff;
     background-color: #fff;

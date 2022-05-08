@@ -1013,6 +1013,20 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   border: 2px solid #fff;
 }
 
+.form .label {
+  margin-top: 50px;
+  margin-bottom: 0px;
+  -ms-flex-item-align: 30px;
+      -ms-grid-row-align: 30px;
+      align-self: 30px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  color: white;
+}
+
 .form .avatars {
   width: 800px;
   margin-top: 20px;
@@ -1039,7 +1053,7 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
 
 .form #input-name {
   width: 800px;
-  margin-top: 20px;
+  margin-top: 4px;
   margin-bottom: 20px;
   padding: 0.5em;
   padding-left: 20px;
@@ -1050,7 +1064,7 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
 
 .form #input-profession {
   width: 800px;
-  margin-top: 20px;
+  margin-top: 4px;
   margin-bottom: 20px;
   padding: 0.5em;
   padding-left: 20px;
@@ -1061,7 +1075,7 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
 
 .form #textarea-comment {
   width: 800px;
-  margin-top: 20px;
+  margin-top: 4px;
   margin-bottom: 40px;
   padding: 0.5em;
   padding-left: 20px;
@@ -1095,8 +1109,8 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   padding-top: 30px;
   text-align: center;
   font-family: Poppins, Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 24px;
+  line-height: 24px;
   font-weight: 400;
   color: #377dff;
   background-color: #fff;
@@ -1117,8 +1131,8 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   text-align: center;
   padding-top: 30px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 24px;
+  line-height: 24px;
   font-weight: 400;
   color: #377dff;
   background-color: #fff;
