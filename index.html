@@ -474,7 +474,7 @@
 
             <div class="person hide">
               <picture>
-                <img class="person-avatar" alt="" />
+                <img class="person-avatar" />
               </picture>
               <p class="testimonial">
                 Here maybe your comment, <br />
@@ -531,23 +531,18 @@
             <img src="pictures/testimonials/avatar13.jpg" alt="picture" />
             <img src="pictures/testimonials/avatar14.jpg" alt="picture" />
           </div>
-          <input
-            id="input-name"
-            placeholder="Enter your name"
-            type="text"
-            maxlength="50"
-            value=""
-          />
-          <input
-            id="input-profession"
-            placeholder="Enter your profession"
-            type="text"
-            maxlength="50"
-            value=""
-          />
+
+          <label class="label" for="input-name">Enter your name</label>
+          <input id="input-name" type="text" maxlength="50" value="" />
+          <label class="label" for="input-profession"
+            >Enter your profession</label
+          >
+          <input id="input-profession" type="text" maxlength="50" value="" />
+          <label class="label" for="textarea-comment"
+            >Write your comment please</label
+          >
           <textarea
             type="text"
-            placeholder="Write your comment please"
             name="textarea-comment"
             id="textarea-comment"
             cols="100"
