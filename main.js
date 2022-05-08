@@ -151,8 +151,18 @@ for (let i of avatarsArray) {
   i.addEventListener("click", function (event) {
     let src = event.target.getAttribute("src");
     personAvatar.setAttribute("src", src);
-    // personAvatar.style.width = "200px";
-    // personAvatar.style.height = "200px";
+    let parentColl = i.parentElement.children;
+
+    if (i.classList.contains("select-avatar-border")) {
+      i.classList.remove("select-avatar-border");
+    } else {
+      for (let j of parentColl) {
+        if (j.classList.contains("select-avatar-border")) {
+          j.classList.remove("select-avatar-border");
+        }
+      }
+      i.classList.add("select-avatar-border");
+    }
   });
 }
 
@@ -180,4 +190,8 @@ saveComment.addEventListener("click", function () {
   inputName.value = "Enter your name";
   inputProfession.value = "Enter your profession";
   textareaComment.value = "Write your comment please";
+
+  inputName.style.color = "gray";
+  inputProfession.style.color = "gray";
+  textareaComment.style.color = "gray";
 });
