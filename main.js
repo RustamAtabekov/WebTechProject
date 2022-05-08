@@ -180,6 +180,8 @@ const inputName = document.getElementById("input-name");
 const inputProfession = document.getElementById("input-profession");
 const textareaComment = document.getElementById("textarea-comment");
 
+// save comment
+
 const saveComment = document.querySelector(".save-comment");
 
 saveComment.addEventListener("click", function () {
@@ -187,11 +189,26 @@ saveComment.addEventListener("click", function () {
   professionPerson.innerHTML = inputProfession.value;
   testimonialPerson.innerHTML = textareaComment.value;
 
-  inputName.value = "Enter your name";
-  inputProfession.value = "Enter your profession";
-  textareaComment.value = "Write your comment please";
+  inputName.value = " ";
+  inputProfession.value = " ";
+  textareaComment.value = " ";
 
-  inputName.style.color = "gray";
-  inputProfession.style.color = "gray";
-  textareaComment.style.color = "gray";
+  commentButtonsColl.classList.remove("hide-comment-buttons");
+  form.classList.add("hide-form");
+});
+
+// clear and Return
+const clearAndReturn = document.querySelector(".clear-and-return");
+
+clearAndReturn.addEventListener("click", function () {
+  inputName.value = " ";
+  inputProfession.value = " ";
+  textareaComment.value = " ";
+
+  commentButtonsColl.classList.remove("hide-comment-buttons");
+  form.classList.add("hide-form");
+
+  let personAvatar = document.querySelector(".person-avatar");
+  personAvatar.removeAttribute("src");
+  personAvatar.parentElement.innerHTML = `<img class="person-avatar" />`;
 });
