@@ -181,7 +181,6 @@ const inputProfession = document.getElementById("input-profession");
 const textareaComment = document.getElementById("textarea-comment");
 
 // save comment
-
 const saveComment = document.querySelector(".save-comment");
 
 saveComment.addEventListener("click", function () {
@@ -209,6 +208,5 @@ clearAndReturn.addEventListener("click", function () {
   form.classList.add("hide-form");
 
   let personAvatar = document.querySelector(".person-avatar");
-  personAvatar.removeAttribute("src");
-  personAvatar.parentElement.innerHTML = `<img class="person-avatar" />`;
+  personAvatar.src = " ";
 });

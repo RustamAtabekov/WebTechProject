@@ -1156,6 +1156,10 @@ header .header-banner-elements .header-big-title .top-bottom-main-title .bottom-
   height: 200px;
 }
 
+.hide-person-avatar {
+  display: none;
+}
+
 /* Beginning of section New Era */
 .newera {
   width: 1200px;
